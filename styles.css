@@ -23,7 +23,7 @@ body {
 
 #navMenu li {
     list-style: none;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
     font-size: 1.2em;
     width: 80px;
