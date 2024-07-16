@@ -23,7 +23,7 @@ body {
     align-items: flex-end;
 }
 
-ul#navMenu li {
+#navMenu li {
     list-style: none;
     font-size: 1.2em;
     width: 80px;
