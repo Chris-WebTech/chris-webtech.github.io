@@ -20,11 +20,11 @@ body {
 
 nav.basicNavigationMenu {
     display: flex;
-    flex-direction: row-reverse;
 }
 
 ul#navMenu li {
     list-style: none;
+    flex-direction: row;
     font-size: 1.2em;
     width: 100px;
     background-color: aqua;
