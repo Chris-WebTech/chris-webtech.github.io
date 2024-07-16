@@ -11,26 +11,20 @@ body {
     margin: 0
 } /* Webpage have defalt whitespace, setting padding and magin to 0 eliminates that whitespace allowing 100% pixels*/
 
-#headingOne {
+.headingOne {
     position: fixed;
     background-color: aliceblue;
     height: 225px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
     width: 100%
 }
 
-nav.basicNavigationMenu {
+ul.container {
     display: flex;
-}
-
-ul#navMenu li {
-    list-style: none;
-    flex-direction: row;
-    font-size: 1.2em;
-    width: 100px;
-    background-color: aqua;
-}
-
-section#mainContent {
-    position: absolute;
-    background-color: silver;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
 }
