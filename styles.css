@@ -1,0 +1,18 @@
+/*
+Welcome to Chris's Designs in Cascading Style Sheets
+This document demonstrates the knowledge I've learned regarding HTML minipulation
+through Cascading Style Sheets (CSS). While HTML structures the content, CSS determines how it looks.
+This document showcases a number of techniques to alter a website.
+*/
+
+body { 
+    padding: 0;
+    margin: 0
+} /* Webpage have defalt whitespace, setting padding and magin to 0 eliminates that whitespace allowing 100% pixels*/
+
+#headingOne {
+    position: fixed;
+    background-color: aliceblue;
+    height: 275px;
+    width: screen
+}
