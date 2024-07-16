@@ -31,6 +31,6 @@ ul#navMenu li {
 }
 
 section#mainContent {
-    position: relative;
-    background-color: bisque;
+    position: absolute;
+    background-color: silver;
 }
