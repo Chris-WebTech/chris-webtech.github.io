@@ -28,4 +28,5 @@ ul#navMenu li {
     list-style: none;
     font-size: 1.2em;
     width: 100px;
+    background-color: aqua;
 }
