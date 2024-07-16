@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 Welcome to Chris's Designs in Cascading Style Sheets
 This document demonstrates the knowledge I've learned regarding HTML minipulation
@@ -20,13 +21,11 @@ body {
 .basicNavigationMenu {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-}
-#navMenu li{
-    width: 80px;
+    align-items: space-around;
 }
 
-#navMenu li {
+ul#navMenu li {
     list-style: none;
     font-size: 1.2em;
+    width: 100px;
 }
