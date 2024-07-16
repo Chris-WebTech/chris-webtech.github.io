@@ -23,11 +23,8 @@ body {
     align-items: space-between
 }
 
-ul#navMenu {
-    list-style: none;
-    font-size: 1.2em
-}
-
 ul#navMenu li {
+    list-style: none;
+    font-size: 1.2em;
     width: 80px;
 }
