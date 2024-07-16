@@ -27,3 +27,7 @@ ul#navMenu {
     list-style: none;
     font-size: 1.2em
 }
+
+ul#navMenu li {
+    width: 80px;
+}
