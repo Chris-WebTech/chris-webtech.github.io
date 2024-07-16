@@ -13,6 +13,17 @@ body {
 #headingOne {
     position: fixed;
     background-color: aliceblue;
-    height: 275px;
-    width: screen
+    height: 225px;
+    width: 100%
+}
+
+.basicNavigationMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between
+}
+
+ul#navMenu {
+    list-style: none;
+    font-size: 1.2em
 }
