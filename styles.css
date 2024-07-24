@@ -6,6 +6,23 @@ body {
     overflow-x: hidden;
 }
 
+.largeNav {
+    position: fixed;
+    margin: 0;
+    background-color: #ffffff3e;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+}
+
 #up {
     position: absolute;
     width: 200px;
