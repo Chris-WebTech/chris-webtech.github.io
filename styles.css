@@ -100,6 +100,15 @@ section {
     border-style: solid;
     border-image-slice: 1;
 }
+
+.wordPress {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: none;
+    width: none;
+}
 #quotePNG {
     background-image: url('quoteOne.png');
     background-position: center;
@@ -108,6 +117,22 @@ section {
     width: 550px;
     height: 300px;
 }
+#wpContext {
+    Width: 30%;
+}
+#viewPoint1 {
+    width: 55%;
+    height: auto;
+}
+    video {
+        background-size: contain;
+        width: 660px;
+        height: auto;
+        margin-top: 12.5%;
+        margin-left: 5.4%;
+        z-index: -1;
+        border-radius: 45px;
+    }
 
 .colorTwo {
     background-color: #370000;
