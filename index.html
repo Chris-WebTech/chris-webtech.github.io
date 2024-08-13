@@ -8,18 +8,21 @@
 
 
   <!--
-  CSS link
+  CSS link/Google Font
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
+  <script src="index.js" defer></script>
+
   <!--
   link to instal the animation library Kute.js
   https://thednp.github.io/kute.js/svgMorph.html
   -->
   <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
   <!--
   link to imesh graidient:
   -->
@@ -122,24 +125,40 @@ Auto generate a sectioned website utilizing on line of code via VS Code:
     </div>
 
     <div id="viewPoint1">
-        <video autoplay muted loop id="myVideo">
-          <source src="laptopMP4.mp4" type="video/mp4">
-        </video>
+      <div class="carousel" id="ffdeskt" data-carousel>
+
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button> 
+        
+          <ul data-slides>
+            <li class="slide" data-active>
+              <video autoplay muted loop id="myVideo">
+                <source src="laptopMP4.mp4" type="video/mp4">
+              </video>
+            </li>
+            <li class="slide">
+              <video autoplay muted loop id="myVideo">
+                <source src="phoneMP4.mp4" type="video/mp4" style="background-image: contain;">
+              </video>
+            </li>
+          </ul>
+
+      </div>        
     </div>
-    
   </section>
 
   <section>
-    <h1>Hello World</h1>
-    <p>Harum amet tenetur, quod necessitatibus deleniti quo, atque alias ipsam deserunt consequuntur quisquam vitae
-      labore vero consectetur? Minus molestiae cupiditate, incidunt soluta saepe cum dolorem sed autem sint, quasi
-      laborum?</p>
-  </section>
-
-  <section>
-    <h1>Hello World</h1>
-    <p>Natus, sit, possimus dolorum dignissimos dolorem aut iure eaque earum culpa accusamus magni aliquid numquam
-      pariatur magnam quae ab odit alias quas officia! Molestiae iusto autem numquam repudiandae rem et!</p>
+    <div id="">
+      <h1>Square Space</h1>
+  <p>During my studies of Web Technologies, I explored
+    the minipulation of html and hosting options available
+    in the Wordpress studio. Utilizing the Nueve Theme,
+    various pluggins and widgets, I was able to make a well
+    presentable website for a small roofing contractor in the
+    local area. Understanding of SEO optimization standards
+    allowed Bauwmans Roofing to be viewed by individuals
+    in the local area looking for an affordable roofing specialist. </p>
+    </div>
   </section>
 
 </body>
