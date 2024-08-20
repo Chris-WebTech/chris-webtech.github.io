@@ -19,9 +19,15 @@ body {
     align-items: center;
     z-index: 3;
 }
-
 ul{
     list-style: none;
+}
+#lnLogo {
+    width: 100px;
+    height: 100px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 section {
@@ -31,7 +37,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 400px;
     padding: 10px 100px 20vw 20vw;
     /* vw = vieport width based on %*/
 }
@@ -48,17 +53,14 @@ section {
         radial-gradient(at 4% 49%, #4b1b1b 0px, transparent 50%) repeat scroll 0% 0%, 
         rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat scroll 0% 0%;
 }
-
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     max-width: 60%;
     min-height: 300px;
     margin-top: 220px;
-    margin-left: 10%;
-    left: 20%;
+    margin-left: 40%;
     background-image: linear-gradient(-120deg, #ffffff52, #ffffff1d, #ffffff00, #ffffff00);
     border-image: linear-gradient(to right, #ffffff00, #ffffff44, #ffffff);
     border-width: 3px 3px 3px 0px ;
@@ -66,7 +68,6 @@ section {
     border-image-slice: 1;
     border-radius: 25px 0px 0px 25px;
 }
-
 .squareOne {
     background-image: url('photo1.jpg');
     background-position: center;
@@ -161,10 +162,7 @@ Custome SVG generator:
         transform: rotate(180deg);
     }/* Spacer End */
 
-
-/*
-Animated orb sections start
-*/
+/* Animated orb sections start*/
 #up {
     position: absolute;
     width: 120px;
@@ -237,12 +235,9 @@ Animated orb sections start
     70%{
         right: 1300px;
     }
-}
-/*
-Orb End
-*/
+}/* Orb End*/
 
-
+/* Basic carousel to cycle from desktop to mobile */
 .carousel
 {
     width: 650px;
@@ -298,4 +293,71 @@ Orb End
     background-color: rgba(0, 0, 0, .1);
 }
 .carousel-button.prev { left: 1rem;}
-.carousel-button.next { right: 1rem;}
+.carousel-button.next { right: 1rem;}/* Carousel end*/
+
+/*clear prevouse styles for Language Accordion*/
+#myLangs {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.accordion {
+    background-color: #90483e;
+    color: #fff1bf;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    text-align: center;
+    transition: 0.4s;
+    align-self: center;
+    border: solid white 2px;
+    border-bottom-width: 0;
+    border-top-width: 0;
+}
+.accordion:hover {
+    background-color: #4f0000;
+}
+.active { 
+    background-color: #ff8b6885;
+    border-top: solid white 2px;
+}
+.panel {
+    display: none;
+    overflow: hidden;
+    width: 89.7%;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    background-color: #ff8b6885;
+    border: solid white 2px;
+    border-bottom-width: 0;
+    border-top-width: 0;
+}/* End accordion */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #121212;
+    font-style: italic;
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+#citeMap, ul.citeMap {
+    padding: 18px 0px;
+    margin: 0px;
+}
+#fLogo {
+    margin: 18px;
+    width: 200px;
+    height: 200px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
