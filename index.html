@@ -31,18 +31,57 @@
   </script>
 
 </head>
-<nav>
-  <ul class="largeNav">
-    <div id="lnLogo">
-      <!-- Large navigation menu logo -->
-    </div>
-    <li>Home</li>
-    <li>About</li>
-    <li>Languages</li>
-    <li>Resume</li>
-  </ul>
 
+<nav>
+  <div class="fixNav">
+    <ul class="largeNav">
+      <div id="lnLogo">
+        <!-- Large navigation menu logo -->
+      </div>
+      <li>Home</li>
+      <li>About</li>
+      <li>Languages</li>
+      <li>Resume</li>
+      <button><a href="contact.html">Contact</a></button>
+    </ul>
+  </div>
+  <!-- 
+  This is a responsive hamberger menu 
+  activated at 1000px for tablet sized divices
+  -->
+
+  <div class="off-aside" onclick="checkPhrase()">
+    <ul id="smallNav">
+      <li>Home</li>
+      <li>About</li>
+      <li>Languages</li>
+      <li>Resume</li>
+      <button><a href="contact.html">Contact</a></button>
+      <div id="lnLogo">
+        <!-- Hamberger-menu logo -->
+      </div>
+    </ul>
+    <!-- Json to open/close-->
+
+  </div>
+
+  <div class="ham-menu" style="z-index: 2;">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
+
+<script>
+  const hamMenu = document.querySelector('.ham-menu');
+  const offScreenMenu = document.querySelector('.off-aside');
+  
+  hamMenu.addEventListener('click', () => {
+               hamMenu.classList.toggle('active');
+               offScreenMenu.classList.toggle('active');
+               })
+
+</script>
 
 <body>
   <!-- 

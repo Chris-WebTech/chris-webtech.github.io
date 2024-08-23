@@ -1,11 +1,17 @@
+@charset "utf-8";
 * { box-sizing: border-box; }
 *::before{ box-sizing: border-box; }
+
 body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
     background-image: linear-gradient(80deg, #370000, #121212);
     color: rgb(251, 246, 239);
     overflow-x: hidden;
+}
+
+.hamNav {
+    display: none;
 }
 
 .largeNav {
@@ -22,7 +28,9 @@ body {
 }
 ul{
     list-style: none;
+    text-decoration: none;
 }
+
 #lnLogo {
     width: 100px;
     height: 100px;
@@ -361,7 +369,9 @@ footer {
 
 /* Tablet view*/
 @media screen and (max-width: 1000px){
-
+    .fixNav {
+        display: none;
+    }
     body {
 		padding: 0;
 		margin: 0;
@@ -400,6 +410,8 @@ footer {
     .container {
         margin: 100px 0px;
         padding: 0px;
+        flex-direction: column;
+        text-align: center;
     }
     #containerContent {
         padding-left: 10%;
@@ -423,11 +435,68 @@ footer {
         width: 450px;
         height: 250px;
     }
+
+    /* Small Navigation CSS */
+    .off-aside {
+        background-color: #290000;
+        height: 100vh;
+        width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        transition: .3s ease;
+    }
+    .off-aside.active { right: 0;}
+    nav.small {
+        padding: 1rem;
+        display: flex;
+        background-color: #A8A8A8;
+    }
+    .ham-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+    }
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .4s ease;
+    }
+    /* Spaces the span bars so there are three */
+    .ham-menu span:nth-child(1) { top: 25%; }
+    .ham-menu span:nth-child(3) { top: 75%; }
+    /* Forms the "x" */
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .ham-menu.active span:nth-child(2) { opacity: 0;}
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }/* End of ham-menu CSS*/
+
 }
 @media screen and (max-width: 475px){
     body {
         padding: 0;
         margin: 0;
+    }
+    .fixNav {
+        display: none;
     }
     .squareTwo {
         display: none;

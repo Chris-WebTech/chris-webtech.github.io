@@ -33,3 +33,11 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+function checkPhrase(){
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-aside');
+
+hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            })}
