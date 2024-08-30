@@ -31,6 +31,10 @@ ul{
     text-decoration: none;
 }
 
+.logoSize {
+    width: 64px;
+    height: 64px;
+}
 #lnLogo {
     width: 100px;
     height: 100px;
@@ -301,44 +305,110 @@ Custome SVG generator:
 .carousel-button.next { right: 1rem;}/* Carousel end*/
 
 /*clear prevouse styles for Language Accordion*/
+section#myLangs {
+    display: block;
+    background-color: #121212;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    transform: translateX(-250px);
+}
 #myLangs {
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
+    flex-direction: column;
+}
+.toLeft {
+    flex-direction: row;
 }
 .accordion {
-    background-color: #90483e;
     color: #fff1bf;
     font-size: 1.2em;
     cursor: pointer;
     padding: 18px;
-    width: 90%;
-    text-align: center;
     transition: 0.4s;
-    align-self: center;
-    border: solid white 2px;
-    border-bottom-width: 0;
-    border-top-width: 0;
+}
+button.accordion {
+    background-color: transparent;
+    border-radius: 999%;
+    border-width: 0;
 }
 .accordion:hover {
     background-color: #4f0000;
 }
 .active { 
     background-color: #ff8b6885;
-    border-top: solid white 2px;
 }
 .panel {
     display: none;
     overflow: hidden;
-    width: 89.7%;
     text-align: center;
-    align-self: center;
-    align-items: center;
-    background-color: #ff8b6885;
-    border: solid white 2px;
-    border-bottom-width: 0;
-    border-top-width: 0;
+    background-image: linear-gradient(120deg, #ffffff52, #ffffff1d, #ffffff00, #ffffff00);
+    border-image: linear-gradient(to left, #ffffff00, #ffffff00, #ffffff7e, #ffffff);
+    border-width: 3px 0 3px 3px ;
+    border-right-width: 0;
+    border-style: solid;
+    border-image-slice: 1;
+    width: 60%;
+    min-height: 125px;
+    transform: translateX(400px);
+    margin-top: -125px;
+}
+/* Accordion Logos*/
+#pyLogo {
+    background-image: url("pyLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#sqlLogo {
+    background-image: url("sglLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#urLogo {
+    background-image: url("unrealLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#dartLogo {
+    background-image: url("dartLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#phpLogo {
+    background-image: url("phpLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#jsLogo {
+    background-image: url("jsLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+button#accord1 {
+    margin-left: 92%;
+
+}
+button#accord2 {
+    margin-left: 97%;
+
+}
+button#accord3 {
+    margin-left: 99%;
+
+}
+button#accord4 {
+    margin-left: 99%;
+
+}
+button#accord5 {
+    margin-left: 98%;
+
+}
+button#accord6 {
+    margin-left: 92%;
+
 }/* End accordion */
 
 footer {
