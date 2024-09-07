@@ -10,6 +10,13 @@ body {
     overflow-x: hidden;
 }
 
+.largeNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+}
+
 #smallNav {
     display: none;
 }
@@ -17,7 +24,7 @@ body {
 .largeNav {
     position: fixed;
     margin: 0px;
-    background-color: #ffffff3e;
+    background-color: #121212;
     min-height: 100px;
     width: 100%;
     display: flex;
@@ -432,7 +439,7 @@ footer {
     margin: 0px;
 }
 #contact1 {
-    padding: 0px;
+    padding: 18px;
     margin: 0px;
 }
 #fLogo {
@@ -448,7 +455,8 @@ footer {
 @media screen and (max-width: 1000px){
     #main {
         transition: margin-left .5s;
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .fixNav {
         display: none;
@@ -515,18 +523,27 @@ footer {
         padding: 0;
         margin: 0;
     }
+    #quotePNG {
+        width: 250px;
+        height: 150px;
+    }
+    #viewPoint1 {
+        padding: 0px;
+        margin: auto;
+    }
     .carousel {
         width: 450px;
         height: 250px;
+        left: -20px;
     }
 
     /* The side navigation menu */
-    div#ham-menu
+    #ham-menu
     {
         height: 50px;
         width: 50px;
-        position: relative;
-        left: 100px;
+        position: fixed;
+        left: 50px;
     }
 
     #ham-menu span.spanBar
@@ -569,7 +586,7 @@ footer {
         z-index: 1; /* Stay on top */
         top: 0; /* Stay at the top */
         left: 0;
-        background-color: #111; /* Black*/
+        background-color: #121212;
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -689,9 +706,55 @@ footer {
         background-image: url('quoteOne.png');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 200px;
-        height: 110px;
+        background-size: contain;
+        width: 190px;
+        padding-left: 0;
     }
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    section#myLangs {
+
+        transform: translateX(-30px);
+    }
+    .logoSize {
+        width: 50px;
+        height: 50px;
+    }
+    button#accord1 {
+        margin-left: 15%;    
+    }
+    button#accord2 {
+        margin-left: 15%;
+    
+    }
+    button#accord3 {
+        margin-left: 15%;
+    
+    }
+    button#accord4 {
+        margin-left: 15%;
+    
+    }
+    button#accord5 {
+        margin-left: 15%;
+    
+    }
+    button#accord6 {
+        margin-left: 15%;
+    
+    }
+    .panel {
+        width: 65%;
+        min-height: 125px;
+        transform: translateX(50px);
+        margin-top: 5px;
+    }/* End accordion */
 }
 }
