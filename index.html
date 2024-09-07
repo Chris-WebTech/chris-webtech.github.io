@@ -32,319 +32,319 @@
 
 </head>
 
-<nav>
-  <div class="fixNav">
-    <ul class="largeNav">
-      <div id="lnLogo">
-        <!-- Large navigation menu logo -->
-      </div>
-      <li>Home</li>
-      <li>About</li>
-      <li>Languages</li>
-      <li>Resume</li>
-      <button><a href="contact.html">Contact</a></button>
-    </ul>
-  </div>
-  <!-- 
-  This is a responsive hamberger menu 
-  activated at 1000px for tablet sized divices
-  -->
-
-  <div class="off-aside" onclick="checkPhrase()">
-    <ul id="smallNav">
-      <li>Home</li>
-      <li>About</li>
-      <li>Languages</li>
-      <li>Resume</li>
-      <button><a href="contact.html">Contact</a></button>
+<body>
+  <nav>
+    <div class="fixNav">
+      <ul class="largeNav">
+        <div id="lnLogo">
+          <!-- Large navigation menu logo -->
+        </div>
+        <li>Home</li>
+        <li>About</li>
+        <li>Languages</li>
+        <li>Resume</li>
+        <button><a href="contact.html">Contact</a></button>
+      </ul>
+    </div>
+  
+    <!-- 
+    This is a responsive hamberger menu 
+    activated at 1000px for tablet sized divices
+    -->
+    <div id="smallNav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Languages</a>
+      <a href="#">Resume</a>
       <div id="lnLogo">
         <!-- Hamberger-menu logo -->
       </div>
-    </ul>
-    <!-- Json to open/close-->
-
-  </div>
-
-  <div class="ham-menu" style="z-index: 2;">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
-
-<script>
-  const hamMenu = document.querySelector('.ham-menu');
-  const offScreenMenu = document.querySelector('.off-aside');
-  
-  hamMenu.addEventListener('click', () => {
-               hamMenu.classList.toggle('active');
-               offScreenMenu.classList.toggle('active');
-               })
-
-</script>
-
-<body>
-  <!-- 
-Auto generate a sectioned website utilizing on line of code via VS Code:
-  section*8>(h1{Hello World})+p>lorem
--->
-
-  <section id="introContent layer1" class="back">
+    </div>
     
-      <div class="squareOne" >
-        <!--
-        create depth
-        -->
-        <div class="photo1">
+    <!-- Use any element to open the sidenav -->
 
+        <div id="ham-menu" style="z-index: 2;" onclick="openNav()">
+          <span class="spanBar"></span>
+          <span class="spanBar"></span>
+          <span class="spanBar"></span>
         </div>
+    </div>  
+    </div>
+  
+  
+  </nav>
+  <div id="main">
+    <!-- 
+  Auto generate a sectioned website utilizing on line of code via VS Code:
+    section*8>(h1{Hello World})+p>lorem
+  -->
+
+    <section id="introContent layer1" class="back">
+      
+        <div class="squareOne" >
+          <!--
+          create depth
+          -->
+          <div class="photo1">
+
+          </div>
+        </div>
+
+        <div class="container" id="aboutMe">
+    
+          <h1>Chris's Web Design Studio</h1>
+
+          <p id="containerContent">My name is Christopher Miller, and
+            I am an Entery Level Web Developer.
+            I gained foundational coding skills and 
+            techniques while majoring in Web Technology 
+            at Flathead Valley Community College in
+            Kalispell Montana. Explore my portfolio
+            by clicking the button below.</p>
+        </div>
+
+        <div id="button1">
+          <button>
+    
+          </button>
+        </div>
+
+        <div class="squareTwo" style="display: hidden;">
+          <!--
+          Tablet
+          -->
+          <div class="photo1">
+
+          </div>
+        </div>
+
+        <!--
+        Flotting orbs animated to mesh
+        -->
+        <section id="up"></section>
+        <section id="down"></section>
+        <section id="left"></section>
+        <section id="right"></section>
+
+    </section>
+
+    <div class="spacer layer2">
+      <!--
+      using a generated svg to create a layered spacer
+    -->
+    </div>
+
+    <section class="quote colorTwo">
+
+      <div id="quoteContext">
+
+        <h3>My First Client</h3>
+        <p>"Hey, after a few days of my website being active I have 
+          started gaining views on my content and someone else messaged me
+          from the website. Big thanks..."  - Baumans Roofing, LLC.
+        </p>
+            
       </div>
 
-      <div class="container" id="aboutMe">
-   
-        <h1>Chris's Web Design Studio</h1>
+      <div id="quotePNG">
+        <!--
+        -->
+      </div>
+    </section>
 
-        <p id="containerContent">My name is Christopher Miller, and
-          I am an Entery Level Web Developer.
-          I gained foundational coding skills and 
-          techniques while majoring in Web Technology 
-          at Flathead Valley Community College in
-          Kalispell Montana. Explore my portfolio
-          by clicking the button below.</p>
+  <div class="spacer flip">
+      <!--
+      using a generated svg to create a layered spacer
+    -->
+    </div>
+
+    <section class="wordPress">
+      <div id="wpContext">
+      <h1>Wordpress Experience</h1>
+      <p>During my studies of Web Technologies, I explored
+        the minipulation of html and hosting options available
+        in the Wordpress studio. Utilizing the Nueve Theme,
+        various pluggins and widgets, I was able to make a well
+        presentable website for a small roofing contractor in the
+        local area. Understanding of SEO optimization standards
+        allowed Bauwmans Roofing to be viewed by individuals
+        in the local area looking for an affordable roofing specialist. </p>
+      </div>
+
+      <div id="viewPoint1">
+        <div class="carousel" id="ffdeskt" data-carousel>
+
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button> 
+          
+            <ul data-slides>
+              <li class="slide" data-active>
+                <video autoplay muted loop id="myVideo">
+                  <source src="laptopMP4.mp4" type="video/mp4">
+                </video>
+              </li>
+              <li class="slide">
+                <video autoplay muted loop id="myVideo">
+                  <source src="phoneMP4.mp4" type="video/mp4" style="background-image: contain;">
+                </video>
+              </li>
+            </ul>
+
+        </div>        
+      </div>
+    </section>
+
+    <section>
+      <div id="">
+        <h1>Aditional HTML/CSS Experience</h1>
+    <p>During my studies of Web Technologies, I explored
+      the minipulation of html and hosting options available
+      in the Wordpress studio.In addition to SquareSpace. View 
+      addtional web design projects by clicking the button below:</p>
       </div>
 
       <div id="button1">
         <button>
-  
+
         </button>
       </div>
 
-      <div class="squareTwo" style="display: hidden;">
-        <!--
-        Tablet
-        -->
-        <div class="photo1">
+    </section>
 
-        </div>
-      </div>
-
+    <div class="spacer layer2">
       <!--
-      Flotting orbs animated to mesh
-      -->
-      <section id="up"></section>
-      <section id="down"></section>
-      <section id="left"></section>
-      <section id="right"></section>
-
-  </section>
-
-  <div class="spacer layer2">
-    <!--
-    using a generated svg to create a layered spacer
-  -->
-  </div>
-
-  <section class="quote colorTwo">
-
-    <div id="quoteContext">
-
-      <h3>My First Client</h3>
-      <p>"Hey, after a few days of my website being active I have 
-        started gaining views on my content and someone else messaged me
-        from the website. Big thanks..."  - Baumans Roofing, LLC.
-      </p>
-          
+      using a generated svg to create a layered spacer
+    -->
     </div>
 
-    <div id="quotePNG">
+    <section class="quote colorTwo">
+
+      <div id="quoteContext" style="text-align: center;">
+
+        <h2>Languages</h2>
+            
+      </div>
+
+    </section>
+
+  <div class="spacer flip">
       <!--
-      -->
-    </div>
-  </section>
-
- <div class="spacer flip">
-    <!--
-    using a generated svg to create a layered spacer
-  -->
-  </div>
-
-  <section class="wordPress">
-    <div id="wpContext">
-    <h1>Wordpress Experience</h1>
-    <p>During my studies of Web Technologies, I explored
-      the minipulation of html and hosting options available
-      in the Wordpress studio. Utilizing the Nueve Theme,
-      various pluggins and widgets, I was able to make a well
-      presentable website for a small roofing contractor in the
-      local area. Understanding of SEO optimization standards
-      allowed Bauwmans Roofing to be viewed by individuals
-      in the local area looking for an affordable roofing specialist. </p>
+      using a generated svg to create a layered spacer
+    -->
     </div>
 
-    <div id="viewPoint1">
-      <div class="carousel" id="ffdeskt" data-carousel>
+    <div id="pxSpacer" style="height: 100px;">
 
-        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-        <button class="carousel-button next" data-carousel-button="next">&#8658;</button> 
+    </div>
+
+    <section id="myLangs">
+      <div class="toLeft">
+        <button class="accordion" id="accord1">
+          <div class="logoSize" id="pyLogo">
+            <!-- Python logo -->
+          </div>
+          Python
+        </button>
+        <div class="panel">
+          <p>
+            Python is a high-level, general-purpose programming language.
+            Its design philosophy emphasizes code readability with the use of significant 
+            indentation.
+          </p>
+        </div>
+      </div>
+
+      <div class="toLeft">
+        <button class="accordion" id="accord2">
+          <div class="logoSize" id="sqlLogo">
+            <!-- SQL logo -->
+          </div>
+          SQL
+        </button>
+        <div class="panel">
+          <p>
+            Structured Query Language (SQL) is a domain-specific language used to manage data,
+            especially in a relational database management system. It's designed to retrieve, 
+            manipulate, and define data within a database.
+          </p>
+        </div>
+      </div>
         
-          <ul data-slides>
-            <li class="slide" data-active>
-              <video autoplay muted loop id="myVideo">
-                <source src="laptopMP4.mp4" type="video/mp4">
-              </video>
-            </li>
-            <li class="slide">
-              <video autoplay muted loop id="myVideo">
-                <source src="phoneMP4.mp4" type="video/mp4" style="background-image: contain;">
-              </video>
-            </li>
-          </ul>
-
-      </div>        
-    </div>
-  </section>
-
-  <section>
-    <div id="">
-      <h1>Aditional HTML/CSS Experience</h1>
-  <p>During my studies of Web Technologies, I explored
-    the minipulation of html and hosting options available
-    in the Wordpress studio.In addition to SquareSpace. View 
-    addtional web design projects by clicking the button below:</p>
-    </div>
-
-    <div id="button1">
-      <button>
-
-      </button>
-    </div>
-
-  </section>
-
-  <div class="spacer layer2">
-    <!--
-    using a generated svg to create a layered spacer
-  -->
-  </div>
-
-  <section class="quote colorTwo">
-
-    <div id="quoteContext" style="text-align: center;">
-
-      <h2>Languages</h2>
-          
-    </div>
-
-  </section>
-
- <div class="spacer flip">
-    <!--
-    using a generated svg to create a layered spacer
-  -->
-  </div>
-
-  <div id="pxSpacer" style="height: 100px;">
-
-  </div>
-
-  <section id="myLangs">
-    <div class="toLeft">
-      <button class="accordion" id="accord1">
-        <div class="logoSize" id="pyLogo">
-          <!-- Python logo -->
-        </div>
-        Python
-      </button>
-      <div class="panel">
-        <p>
-          Python is a high-level, general-purpose programming language.
-          Its design philosophy emphasizes code readability with the use of significant 
-          indentation.
-        </p>
-        <p>
-          Python is both case and indentation sensative, meaning attention to detail is a must.
-        </p>
-      </div>
-    </div>
-
-    <div class="toLeft">
-      <button class="accordion" id="accord2">
-        <div class="logoSize" id="sqlLogo">
-          <!-- SQL logo -->
-        </div>
-        SQL
-      </button>
-      <div class="panel">
-        <p>
-          Structured Query Language (SQL) is a domain-specific language used to manage data,
-          especially in a relational database management system.
-        </p>
-      </div>
-    </div>
-
-    <div class="toLeft">
-      <button class="accordion" id="accord3">
-        <div class="logoSize" id="urLogo">
-          <!-- Unreal logo -->
-        </div>
-        Unreal
-      </button>
-      <div class="panel">
-        <p>
-          
-        </p>
+      <div class="toLeft">
+        <button class="accordion" id="accord3">
+          <div class="logoSize" id="dartLogo">
+            <!-- Dart logo -->
+          </div>
+          Dart
+        </button>
         
+        <div class="panel">
+          <p>
+            Dart is a general-purpose, object-oriented programming language developed by Google.
+            It's designed to be easy to learn and use, with a syntax that is familiar to 
+            developers coming from other languages like Java and C#.
+          </p>
+        </div>
       </div>
-    </div>
+
+      <div class="toLeft">
+        <button class="accordion" id="accord4">
+          <div class="logoSize" id="phpLogo">
+            <!-- PHP logo -->
+          </div>
+          PHP
+        </button>
+        
+        <div class="panel">
+          <p>
+          PHP (Hypertext Preprocessor) is a popular, open-source,
+          server-side scripting language primarily used for web development.
+          It's 1  designed to be embedded within HTML code, making it easy to 
+          create dynamic web pages.
+          </p>
+        </div>
+      </div>
+
+      <div class="toLeft">
+        <button class="accordion" id="accord5">
+          <div class="logoSize" id="jsLogo">
+            <!-- Java logo -->
+          </div>
+          Java
+        </button>
+        <div class="panel" id="panelBottom">
+          <p>
+            JavaScript is a versatile programming language that is primarily used to create 
+            interactive web pages. It's a client-side scripting language, meaning it runs directly 
+            in the web browser, allowing for dynamic and responsive user experiences.
+          </p>
+        </div>
+      </div>
+
       
-    <div class="toLeft">
-      <button class="accordion" id="accord4">
-        <div class="logoSize" id="dartLogo">
-          <!-- Dart logo -->
-        </div>
-        Dart
-      </button>
-      
-      <div class="panel" style="transform: translateX(425px);">
-        <p>
+      <div class="toLeft">
+        <button class="accordion" id="accord6">
+          <div class="logoSize" id="urLogo">
+            <!-- Unreal logo -->
+          </div>
+          Unreal
+        </button>
+        <div class="panel">
+          <p>
+            Unreal Engine Blueprints is a visual scripting system within the Unreal Engine 
+            game development platform. It allows developers to create and modify game logic 
+            without writing traditional code.
+          </p>
           
-        </p>
-        
-      </div>
-    </div>
-
-    <div class="toLeft">
-      <button class="accordion" id="accord5">
-        <div class="logoSize" id="phpLogo">
-          <!-- PHP logo -->
         </div>
-        PHP
-      </button>
-      
-      <div class="panel">
-        <p>
-          
-        </p>
-        
       </div>
-    </div>
+    </section>
+    <div id="pxSpacer" style="height: 200px;">
 
-    <div class="toLeft">
-      <button class="accordion" id="accord6">
-        <div class="logoSize" id="jsLogo">
-          <!-- Java logo -->
-        </div>
-        Java
-      </button>
-      <div class="panel" id="panelBottom">
-        <p>Lorem ipsum...</p>
-      </div>
     </div>
-  </section>
-  <div id="pxSpacer" style="height: 200px;">
-
   </div>
-
 </body>
 <!-- -->
 <footer>
@@ -361,7 +361,18 @@ Auto generate a sectioned website utilizing on line of code via VS Code:
 
   <div id="contact1">
 
+    <form action="mailto:millerchristopher166@yahoo.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+      Name:<br>
+      <input type="text" size="55" name="Contact-Name" required><br><br>
+      Email:<br>
+      <input type="email" size="55" name="Contact-Email" required><br><br>
+      Message:<br>
+      <textarea name="Contact-Message" rows="6" cols="55"></textarea><br><br>
+      <button type="submit" value="Submit">Send</button>
+    </form>
+    
   </div>
+
   <div id="copyRight">
     <div id="fLogo">
       <!-- Footer logo -->
