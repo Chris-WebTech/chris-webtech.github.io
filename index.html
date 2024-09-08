@@ -161,7 +161,7 @@
 
     <section class="wordPress">
       <div id="wpContext">
-      <h1>Wordpress Experience</h1>
+        <h1>Aditional HTML/CSS Experience</h1>
       <p>During my studies of Web Technologies, I explored
         the minipulation of html and hosting options available
         in the Wordpress studio. Utilizing the Nueve Theme,
@@ -172,45 +172,96 @@
         in the local area looking for an affordable roofing specialist. </p>
       </div>
 
-      <div id="viewPoint1">
-        <div class="carousel" id="ffdeskt" data-carousel>
-
-          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-          <button class="carousel-button next" data-carousel-button="next">&#8658;</button> 
-          
             <ul data-slides>
               <li class="slide" data-active>
-                <video autoplay muted loop id="myVideo">
-                  <source src="laptopMP4.mp4" type="video/mp4">
-                </video>
+                
               </li>
               <li class="slide">
-                <video autoplay muted loop id="myVideo">
-                  <source src="phoneMP4.mp4" type="video/mp4" style="background-image: contain;">
-                </video>
+                
               </li>
             </ul>
+      <!-- Images used to open the lightbox -->
+      
+      <div class="row">
+        <div class="row-column1">
+          <div class="column">
+            <img src="shelter.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="farm.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>     
+        </div>
 
-        </div>        
+        <div class="row-column1">
+          <div class="column">
+            <img src="roofing.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="logo.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <video autoplay muted loop class="myVideo">
+              <source src="laptopMP4.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <video autoplay muted loop class="myVideo" style="margin-left: 32%;">
+              <source src="phoneMP4.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img3_wide.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img4_wide.jpg" style="width:100%">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+           <div class="thumbnailR">
+            <div class="column">
+              <img class="demo" src="shelter.png" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="farm.png" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="roofing.png" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="logo.png" onclick="currentSlide(4)" alt="Lights">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div id="">
-        <h1>Aditional HTML/CSS Experience</h1>
-    <p>During my studies of Web Technologies, I explored
-      the minipulation of html and hosting options available
-      in the Wordpress studio.In addition to SquareSpace. View 
-      addtional web design projects by clicking the button below:</p>
-      </div>
-
-      <div id="button1">
-        <button>
-
-        </button>
-      </div>
-
-    </section>
 
     <div class="spacer layer2">
       <!--
