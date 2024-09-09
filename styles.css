@@ -97,7 +97,7 @@ section {
     height: 300px;
     position: absolute;
     top: 250px;
-    left: 10%;
+    left: 15%;
     transform: rotate(-45deg);
     z-index: 0;
     box-shadow: rgba(255, 0, 0, 0.414) -40px 10px 25px;
@@ -129,7 +129,7 @@ section {
     margin: 0;
     padding: 0;
     height: none;
-    width: none;
+    width: 100%;
 }
 #quotePNG {
     background-image: url('quoteOne.png');
@@ -140,7 +140,14 @@ section {
     height: 300px;
 }
 #wpContext {
-    Width: 30%;
+    Width: 40%;
+    padding: 10px;
+    padding-right: 0;
+    background-image: linear-gradient(-120deg, #ffffff52, #ffffff1d, #ffffff00, #ffffff00);
+    border-image: linear-gradient(to right, #ffffff00, #ffffff44, #ffffff);
+    border-width: 3px 3px 3px 0px ;
+    border-style: solid;
+    border-image-slice: 1;
 }
 
 .colorTwo {
@@ -387,7 +394,7 @@ Custome SVG generator:
   
   img.demo {
     opacity: 0.6;
-    width: 100px;
+    width: 300px;
     height: auto;
   }
   
@@ -455,6 +462,7 @@ button.accordion {
     border-right-width: 0;
     border-style: solid;
     border-image-slice: 1;
+    border-radius: 0px 40px 40px 0px;
     width: 65%;
     min-height: 125px;
     transform: translateX(300px);
@@ -607,7 +615,7 @@ footer {
         width: 95%;
     }
     .wordPress {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #wpContext {
         width: 100%;
@@ -621,15 +629,6 @@ footer {
     #quotePNG {
         width: 250px;
         height: 150px;
-    }
-    #viewPoint1 {
-        padding: 0px;
-        margin: auto;
-    }
-    .carousel {
-        width: 450px;
-        height: 250px;
-        left: -20px;
     }
 
     /* The side navigation menu */
