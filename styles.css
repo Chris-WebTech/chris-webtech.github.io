@@ -45,7 +45,7 @@ ul{
 #lnLogo {
     width: 100px;
     height: 100px;
-    background-image: url('logo.png');
+    background-image: url('image/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -89,7 +89,7 @@ section {
     border-radius: 25px 0px 0px 25px;
 }
 .squareOne {
-    background-image: url('photo1.jpg');
+    background-image: url('image/photo1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -132,7 +132,7 @@ section {
     width: 100%;
 }
 #quotePNG {
-    background-image: url('quoteOne.png');
+    background-image: url('image/quoteOne.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,11 +176,11 @@ Custome SVG generator:
     background-size: cover;
 }
     .layer2{
-        background-image: url('div_one.svg');
+        background-image: url('image/div_one.svg');
         position: relative;
     }
     .flip {
-        background-image: url('div_one.svg');
+        background-image: url('image/div_one.svg');
         position: relative;
         transform: rotate(180deg);
     }/* Spacer End */
@@ -470,32 +470,32 @@ button.accordion {
 }
 /* Accordion Logos*/
 #pyLogo {
-    background-image: url("pyLogo.png");
+    background-image: url("image/pyLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #sqlLogo {
-    background-image: url("sglLogo.png");
+    background-image: url("image/sglLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #urLogo {
-    background-image: url("unrealLogo.png");
+    background-image: url("image/unrealLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #dartLogo {
-    background-image: url("dartLogo.png");
+    background-image: url("image/dartLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #phpLogo {
-    background-image: url("phpLogo.png");
+    background-image: url("image/phpLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #jsLogo {
-    background-image: url("jsLogo.png");
+    background-image: url("image/jsLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -549,7 +549,7 @@ footer {
     margin: 18px;
     width: 150px;
     height: 150px;
-    background-image: url('logo.png');
+    background-image: url('image/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -589,7 +589,7 @@ footer {
         display: none;
     }
     .squareTwo {
-        background-image: url('photo1.jpg');
+        background-image: url('image/photo1.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -797,7 +797,7 @@ footer {
         flex-direction: column-reverse;
     }
     #quotePNG {
-        background-image: url('quoteOne.png');
+        background-image: url('image/quoteOne.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
