@@ -104,6 +104,15 @@ section {
     border: red 1px solid;
 
 }
+#square2 {
+    width: 300px;
+    height: 560px;
+    position: absolute;
+    top: 120px;
+    left: 15%;
+
+
+}
 
 .quote {
     display: flex;
