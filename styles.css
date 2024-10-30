@@ -561,13 +561,25 @@ footer {
     background-size: contain;
 }
 
+#appereanceHide {
+    display: none;
+}
+
 /* Tablet view*/
 @media screen and (max-width: 1000px){
+    #appereanceHide {
+        display: contents;
+    }
     #main {
         transition: margin-left .5s;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    #topVideo video {
+        margin-left: 0;
+        height: 600px;
+    }
+
     .fixNav {
         display: none;
     }
@@ -582,6 +594,7 @@ footer {
         align-items: center;
 	}
     section {
+        flex-direction: column;
         padding: 0;
         align-content: center;
     }
