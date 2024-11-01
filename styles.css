@@ -73,10 +73,7 @@ section {
     /* vw = vieport width based on %*/
 }
 /* -------------------------------- Language Page Styles --------------------------- */
-#zero {
-    padding: 0px;
-    margin: 0px;
-}
+#andriodStudio { padding: 0px; margin: 0px; }
 
 #banner {
     position: relative;
@@ -89,9 +86,9 @@ section {
 }
 
 .myApps {
-    padding: 0;
-    margin: 0;
-    width: 100vh;
+    padding: 0px;
+    margin: 0px;
+    width: 90vw;
 }
 .scrollable {
     overflow-y: hidden;
@@ -124,6 +121,9 @@ div.section {
     margin-left: auto;
     margin-right: auto;
 }
+
+#javaScript{ padding: 0px; margin: 0px; }
+
 /* -------------------------------- End Language Page --------------------------- */
 
 
@@ -195,14 +195,13 @@ div.section {
     border-style: solid;
     border-image-slice: 1;
 }
-.colorTwo
 .wordPress {
     display: flex;
     flex-direction: row-reverse;
     margin: 0;
     padding: 0;
     height: none;
-    width: 100%;
+    width: 100vw;
 }
 #quotePNG {
     background-image: url('image/quoteOne.png');
