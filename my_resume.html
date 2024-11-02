@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer's Studio</title>
+
+
+  <!--
+  CSS link/Google Font
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="index.js" defer></script>
+
+  <!--
+  link to instal the animation library Kute.js
+  https://thednp.github.io/kute.js/svgMorph.html
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+  <!--
+  link to imesh graidient:
+  -->
+  <script src="https://kit.fontawesome.com/ba57058827.js"
+  crossorigin="anonymous">
+  </script>
+
+</head>
+
+<body>
+  <nav>
+    <div class="fixNav">
+      <ul class="largeNav">
+        <div id="lnLogo">
+          <!-- Large navigation menu logo -->
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="my_languages.html">Languages</a>
+        <a href="my_resume.html">Resume</a>
+      </ul>
+    </div>
+  
+    <!-- 
+    This is a responsive hamberger menu 
+    activated at 1000px for tablet sized divices
+    -->
+    <div id="smallNav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="my_languages.html">Languages</a>
+      <a href="my_resume.html">Resume</a>
+      <div id="lnLogo"  style="margin-left: 25px;">
+        <!-- Hamberger-menu logo -->
+      </div>
+    </div>
+    
+    <!-- Use any spanBar to open the sidenav -->
+
+        <div id="ham-menu" style="z-index: 2;" onclick="openNav()">
+          <span class="spanBar"></span>
+          <span class="spanBar"></span>
+          <span class="spanBar"></span>
+        </div>
+    </div>  
+</nav>
+
+<!----------------------------------------------------------------------->
+<!-------------------------    Main Content    -------------------------->
+
+    <div id="main">
+        <section id="resume_wapper">
+            <div id="res_margins">
+            <div id="work_Experience">
+
+                <h3>Work Experience</h3>
+
+                <div class="work_gp_Experience">
+                <h4>Sales Associate</h4>
+
+                <div class="row">
+                    <h5>Grizzly Pine - WhiteFish, MT.</h5>
+                    <h5>October 2022 &mdash; August 2024</h5>
+                </div>
+
+                    <p>My responsibilities included:</p>
+                    <ul>
+                        <li>
+                        Keeping the store organized and clean for a 
+                        pleasant customer experience.
+                        </li>
+
+                        <li>
+                        Remaining knowledgeable and informative regarding products and prices that contributed
+                        to maintaining the store's positive 5-star rating.                            
+                        </li>
+
+                        <li>
+                        Helping customers with questions, problems, and needs while maintaining a professional
+                        and polite attitude.
+                        </li>
+                    </ul>
+
+                    <p>I also held the position of assistant manager, where I:</p>
+                    <ul>
+                        <li>
+                            Concluded daily reports regarding company sales.
+                        </li>
+                        <li>
+                            Account for store inventory and update the state inventory database, Metric, of any
+                            discrepancies.                            
+                        </li>
+                        <li>
+                            Managed access to $5000 in the store's safe, where I accurately counted opening tills,
+                            counted closed till cash bags, and allocated employee tips.
+                        </li>
+                        <li>
+                            Received inventory transfers from other branches and processed deliveries for sale.
+                        </li>
+                        <li>
+                            Trained 5 new store employees on store policies and procedures.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="work_s1">
+                    <h4>Store Clerk</h4>
+
+                    <div class="row">
+                    <h5>Super 1 Foods - Columbia Falls, MT.</h5>
+                    <h5>April 2015 &mdash; May 2019</h5>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="width: 100%;">
+
+            <div id="my_education">
+                <h3>Education<h3>
+
+                    <div class="row">
+                        <h5>High School Diploma, Columbia Falls High School, MT.</h5>
+                        <h5>June 2019</h5>
+                    </div>
+
+                    
+                    <div class="row">
+                        <h5>Associate in Applied Science, FLathead Valley Community College, MT.</h5>
+                        <h5>May 2025</h5>
+                    </div>
+
+            </div>
+
+            <hr>
+
+            <div id="my_Skills">
+                <h3>Education</h3>
+                    <td>
+                        <tr>
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>
+                                    Customer Service (6 years)
+                                </li>  
+                                <li>
+                                    Interpersonal Communication (4 years)
+                                </li> 
+                                <li>
+                                    Attention to Detail (4 years)
+                                </li> 
+                                <li>
+                                    Oragnization (4 years)
+                                </li> 
+                                <li>
+                                    Management (2 years)
+                                </li> 
+                            </ul>
+                        </tr>
+                        <tr>
+                            <h3>My Languages</h3>
+                            <ul>
+                                <li>
+                                    HTML5/CSS/PHP
+                                </li> 
+                                <li>
+                                    Android Studio Kotlin
+                                </li> 
+                                <li>
+                                    Structure Query Language(SQL)
+                                </li> 
+                                <li>
+                                    JavaScript
+                                </li> 
+                                <li>
+                                    Python
+                                </li>  
+                            </ul>
+                        </tr>
+                    </td>
+            </div>
+
+            <hr>
+
+            <div id="my_Military_Experience">
+                <h3>Military Service</h3>
+                <div class="work_gp_Experience">
+
+                <div class="row">
+                    <h5>Branch: Army</h5>
+                    <h5>October 2022 &mdash; August 2024</h5>
+                </div>
+                <h5>Country: United States</h5>
+                <h5>Rank: Sargeant</h5>
+
+
+
+                    <p>
+                        After graduating High School in 2019, I began my military contract serving as an Infantryman in
+                        the United States Army. I was promoted above peers to sergeant and completed my service
+                        leading a small team. In addition, I:
+                    </p>
+                    <ul>
+                        <li>
+                        worked in high-stress situations where quick critical thinking was essential to complete
+                        various objectives.                            
+                        </li>
+
+                        <li>
+                        maintained 100% inventory for $35,005 of military equipment during management
+                        changeover.                            
+                        </li>
+
+                        <li>
+                        trained and managed a team of three members to perform cohesively and operate with
+                        minimal oversight.                            
+                        </li>
+
+                        <li>
+                        trained over 60 members to proficiency in operating new military equipment                          
+                        </li>
+                    </ul>
+
+                    <p><strong>Commendations</strong></p>
+                    <ul>
+                        <li>
+                        2x Army Commendation Medal
+                        </li>
+                        <li>
+                        2x Army Achievement Medal               
+                        </li>
+                        <li>
+                        1x Army Good Conduct Medal
+                        </li>
+                        <li>
+                        1x Non-commissioned Officer Professional Growth Ribbon
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div id="my_licence">
+                <h3>Certifications and Licenses</h3>
+
+                <div class="row">
+                    <h5>Driver's License (Class D)</h5>
+                    <h5>October 2015 &mdash; March 2033</h5>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+</body>
+<!----------------------------------------------------------------------->
+<!-------------------------   Footer Section   -------------------------->
+<footer>
+    <div id="citeMap">
+      <h5> Cite Map</h5>
+      <hr>
+      <ul class="citeMap">
+          <li>Home</li>
+          <li>About</li>
+          <li>Languages</li>
+          <li>Resume</li>
+      </ul>
+    </div>
+  
+    <div id="copyRight">
+      <div id="fLogo">
+        <!-- Footer logo -->
+      </div>
+      <soft><h6>Copyright &copy; 
+        <script type="text/javascript">
+          function clockTick()    {
+            currentTime = new Date();
+            year = currentTime.getFullYear();
+            setInterval(clockTick, 1000);
+            return (year);
+          }
+          document.write(clockTick());
+          //-->
+        </script> | Christopher Miller
+      </h6></soft>
+</div>
+</footer>
+</html>
+  
