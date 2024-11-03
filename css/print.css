@@ -1,0 +1,46 @@
+/* Hide Nav/Footer sections that are not needed in print */
+nav, footer {
+    display: none;
+}
+
+/* Adjust font size and margins for better readability */
+body {
+    font-size: 12pt;
+    margin: 1in;
+}
+
+#res_margins {
+    margin: 0px;
+    padding: 0px;
+}
+#main {
+    position: relative;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+.row {
+    margin-top: -30px;
+    padding: 0px;
+}
+section {
+    margin: 0px;
+    padding: 0px;
+}
+#resume_wapper {
+    top: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;   
+}
+.work_Experience{
+    margin-top: 0px;
+}
+/* Page breaks */
+@page {
+    margin: 1in;
+}
+.page-break {
+    page-break-before: always;
+}

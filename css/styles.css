@@ -129,7 +129,7 @@ div.section {
 #resume_wapper {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0px;
     width: 70vw;
     top: 160px;
     margin: auto;
@@ -139,11 +139,14 @@ div.section {
     color: black;
     font-size: larger;
 }
-#res_margins { margin: 5% 20%; }
+#resume_wapper p, #resume_wapper li { font-size: medium;}
+#resume_wapper ul {
+    list-style: disc;
+}
+#res_margins { margin: 10% 20%; }
 .row{
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    margin-top: -50px;
+    padding: 0px;
     flex-direction: row;
     justify-content: space-between;
 }

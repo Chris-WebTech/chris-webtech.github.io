@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer's Studio</title>
+
+
+  <!--
+  CSS link/Google Font
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+
+  <script src="js/hambergerNav.js" defer></script>
+
+  <!--
+  link to instal the animation library Kute.js
+  https://thednp.github.io/kute.js/svgMorph.html
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+  <!--
+  link to imesh graidient:
+  -->
+  <script src="https://kit.fontawesome.com/ba57058827.js"
+  crossorigin="anonymous">
+  </script>
+
+  <!-- Clear margins padding-->
+  <style>
+    body{ margin: 0%; padding: 0%;}
+    section { margin: 0%; padding: 0%;}
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="fixNav">
+      <ul class="largeNav">
+        <div id="lnLogo">
+          <!-- Large navigation menu logo -->
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="my_languages.html">Languages</a>
+        <a href="my_resume.html">Resume</a>
+      </ul>
+    </div>
+  
+    <!-- 
+    This is a responsive hamberger menu 
+    activated at 1000px for tablet sized divices
+    -->
+    <div id="smallNav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="my_languages.html">Languages</a>
+      <a href="my_resume.html">Resume</a>
+      <div id="lnLogo"  style="margin-left: 25px;">
+        <!-- Hamberger-menu logo -->
+      </div>
+    </div>
+    
+    <!-- Use any spanBar to open the sidenav -->
+
+        <div id="ham-menu" style="z-index: 2;" onclick="openNav()">
+          <span class="spanBar"></span>
+          <span class="spanBar"></span>
+          <span class="spanBar"></span>
+        </div>
+    </div>  
+</nav>
+
+<!----------------------------------------------------------------------->
+<!-------------------------    Main Content    -------------------------->
+
+    <div id="main">
+   
+    </div>
+
+<!----------------------------------------------------------------------->
+</section>
+</div>
+</body>
+<!-------------------------   Footer Section   -------------------------->
+<footer>
+<div id="citeMap">
+<h5> Cite Map</h5>
+<hr>
+<ul class="citeMap">
+  <li>Home</li>
+  <li>About</li>
+  <li>Languages</li>
+  <li>Resume</li>
+</ul>
+</div>
+
+<div id="copyRight">
+<div id="fLogo">
+<!-- Footer logo -->
+</div>
+<soft><h6>Copyright &copy; 
+<script type="text/javascript">
+  function clockTick()    {
+    currentTime = new Date();
+    year = currentTime.getFullYear();
+    setInterval(clockTick, 1000);
+    return (year);
+  }
+  document.write(clockTick());
+  //-->
+</script> | Christopher Miller
+</h6></soft>
+</div>
+</footer>
+</html>
