@@ -694,6 +694,30 @@ footer {
 
 /* Tablet view*/
 @media screen and (max-width: 1000px){
+    /* --------------------------------     About Me Page    --------------------------- */
+#about_banner{
+    width: 88vw;
+    height: 440px;
+}
+#mePhoto{
+    width: 340px;
+    height: 250px;
+}
+
+#comPhoto{
+    width: 340px;
+    height: 200px;
+}
+/* --------------------------------   Aboutme End Page   --------------------------- */
+/* --------------------------------    Rresume Page   --------------------------- */
+#resume_wapper {
+    width: 90vw;
+    top: 160px;
+    margin-bottom: 205px;
+}
+#res_margins { margin: 5% 5%; }
+.row{margin-top: 0px;}
+/* --------------------------------   End Rresume Page --------------------------- */
     #mobileHide {
         display: contents;
     }
@@ -926,6 +950,30 @@ footer {
         }
 }
 @media screen and (max-width: 450px){
+        /* --------------------------------     About Me Page    --------------------------- */
+    #about_banner{
+        width: 88vw;
+        height: 440px;
+    }
+    #mePhoto{
+        width: 340px;
+        height: 250px;
+    }
+
+    #comPhoto{
+        width: 340px;
+        height: 200px;
+    }
+    /* --------------------------------   Aboutme End Page   --------------------------- */
+    /* --------------------------------    Rresume Page   --------------------------- */
+    #resume_wapper {
+        width: 95vw;
+        top: 160px;
+        margin-bottom: 205px;
+    }
+    #res_margins { margin: 2.5% 2.5%; }
+    .row{margin-right: wrap;}
+/* --------------------------------   End Rresume Page --------------------------- */
     body {
         padding: 0;
         margin: 0;
