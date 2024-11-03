@@ -72,6 +72,43 @@ section {
     padding: 10px 100px 20vw 20vw;
     /* vw = vieport width based on %*/
 }
+
+/* --------------------------------     About Me Page    --------------------------- */
+#about_banner{
+    background-image: url('image/aboutme/20201810_yakima.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(255, 0, 0, 0.414) -40px 10px 25px;
+    border: red 1px solid;
+    width: 88vw;
+    height: 440px;
+}
+#mePhoto{
+    background-image: url('image/aboutme/20240624_chris_webtech.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 350px;
+    box-shadow: rgba(255, 0, 0, 0.414) -40px 10px 25px;
+    border: red 1px solid;
+    z-index: 1;
+}
+
+#comPhoto{
+    background-image: url('image/aboutme/20210812_commendable.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+    box-shadow: rgba(255, 0, 0, 0.414) -40px 10px 25px;
+    border: red 1px solid;
+    z-index: 1;
+}
+/* --------------------------------   Aboutme End Page   --------------------------- */
+/* --------------------------------------------------------------------------------- */
 /* -------------------------------- Language Page Styles --------------------------- */
 #andriodStudio { padding: 0px; margin: 0px; }
 
