@@ -1,0 +1,247 @@
+<!-- Array minipulation Widget -->
+
+<div id="array_minipulation_form">
+
+    <script>
+
+        function printArray(array,tagID,heading)
+        {
+            var arrayItem = " ";
+            for(var cntr=0; cntr<array.length;cntr++)
+            {
+                arrayItem = arrayItem + array[cntr] + "<br>";
+            }
+
+            document.getElementById(tagID).innerHTML =
+                '<font color="tan">'+
+                    heading +
+                '</font><br>' +
+                arrayItem +
+                '<hr>';
+        }// end of printArray
+        //End of array content - dispay at bottom of <form>
+        
+        function arrayFindItem(array, value)
+        {
+            var found = array.indexOf(value);
+
+            return found;
+        }
+        
+    </script>
+    <style>
+
+        table{
+            color: #ffffd8; font-size: medium;
+            width: 100%;
+            margin: auto;
+            justify-self: center;
+        }
+
+        form{
+            justify-items: center;
+        }
+
+        td{
+            padding: 10px;
+        }
+        h4 {
+            color: #ffffd8;
+            padding: 20px;
+            border-bottom: #ffffd8 solid 1px;
+            font-size: large;
+        }
+
+        #userSearch{
+            margin-left: 50px;
+        }
+
+        input[type=text]{
+            border-radius: 15px;
+            background-color: #ffffd8;
+        }
+
+        input[type=reset]{
+            color: #ffffd8; font-size: medium;
+            border-top-color: #ff8a8a84;
+            border-left-color: #ff5e5eac;
+            border-left-width: 1px;
+            background-color: #000000;
+            height: 30px;
+            width: 120px;
+            border-radius: 15px;
+        }
+        input[type=reset]:hover{ background-color: #191919;}
+    </style>
+        <form method="get">
+            <h4>Add, Edit, and Delete Form Array</h4>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" id="addPush" name="tittle" value=add2() onclick="add2()">&nbsp;&nbsp;
+                        <label for="addPush">Add to Array</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="removePop" name="tittle" onclick="removeByPop()" >&nbsp;&nbsp;
+                        <label for="removePop">Remove Last Entered</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="shiftTop" name="tittle" onclick="shiftFromTop()" >&nbsp;&nbsp;
+                        <label for="shiftTop">Remove First Entered</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="add2Top" name="tittle" onclick="addTop()" >&nbsp;&nbsp;
+                        <label for="add2Top">Add Too (shift)</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="addSplit" name="tittle" onclick="split1()" >&nbsp;&nbsp;
+                        <label for="addSplit">Add multiple (<i>Seperate With ","</i>)</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="addSlice" name="tittle" onclick="splice1()" >
+                        <label for="addSlice">Delete</label><br>Position Index<br><br>
+                        <label for="indexValue">Delete Number of Words</label>
+                    </td>
+                    <td>
+                            <br><input type="text" id="addSplice" name="indexValue" maxlength="3"><br><br>
+                            <input type="text" id="remNum" name="indexValue" maxlength="3">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="arrayLength" name="tittle" onclick="shortArray()">
+                        <label for="arrayLength"> Set Array Length</label>
+                    </td>
+                    <td>
+                            <input type="text" id="enterLength" name="valueOfLength" maxlength="3">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p id="p0">     </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="userValue">Enter Word</label>&nbsp;&nbsp;
+                        <input type="text" id="userValue" name="enterValue" maxlength="15" required>
+                    </td>
+                    <td>
+                        <input type="reset" id="userSearch" value="Sumbit" onclick="execute()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 0px;">
+                        <label for="userSearch">Search Term: </label>
+                        <input type="text" id="userTerm" name="wordValue" maxlength="15">
+                    </td>
+                    <td>
+                        <input type="reset" value="Search" id="userSearch" name="tittle" onclick="searchWord()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><p id="p1"></p></td>
+                </tr>
+            </table>
+        </form>
+            
+        <!-- Jave functions the selected radio buttons call -->
+        <script>
+            //array prints with example to make sure it worked.
+            var wordList = ["Example"];
+
+            // add to back of array (push)
+            function add2()
+            {
+                wordList.push(document.getElementById
+                ("userValue").value);
+            };
+
+            // remove last in array(pop)
+            function removeByPop()
+            {
+                wordList.pop()
+            };
+
+            //remoove first in array(shift)
+            function shiftFromTop()
+            {
+                wordList.shift()
+            };
+
+            //add to the top of array(unshift)
+            function addTop()
+            {
+                wordList.unshift(document.getElementById
+                ("userValue").value);
+            };
+
+            //Add multiple words using a comma(split)
+            function split1()
+            {
+                var empty = [];
+                var addMe = document.getElementById("userValue").value;
+
+                empty = addMe.split(',');
+
+                wordList = wordList.concat(empty);
+            };
+
+            //Remove multiple words using position(splice)
+            function splice1()
+            {
+                var searchItem = parseFloat(document.getElementById("addSplice").value);
+                var delNum = parseFloat(document.getElementById("remNum").value);
+
+                wordList.splice(searchItem - 1,delNum);
+            }
+
+            //Search word in aray and display position
+            function searchWord()
+            {
+                var findMe = document.getElementById("userTerm").value;
+
+                var foundStatus = arrayFindItem(wordList,findMe);
+
+                document.getElementById("p1").innerHTML =
+                '<font color="tan"> Search Resaults' +
+                '</font><br>' +
+                foundStatus + '&nbsp;&nbsp;' + wordList[foundStatus] + 
+                '<br><bh><br>';
+            };
+
+            //Shorten array to length(length)
+            function shortArray()
+            {
+                var userLength = document.getElementById("enterLength").value;
+                wordList.length = userLength;
+            }
+
+            //takes array worlist and print it to Contents
+            function execute()
+            {  
+                printArray(wordList,"p0","Contents")
+            };
+
+        </script>
+</div>

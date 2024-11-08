@@ -121,7 +121,15 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.section.arrayForm{
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    align-items: center;
+    background-color: #121212;
+}
 .myApps {
     padding: 0px;
     margin: 0px;
@@ -137,7 +145,7 @@ section {
 }
 
 div.section {
-    width: 100vw;
+    width: 90vw;
     display: inline-flex;
     position: relative;
 }
@@ -159,7 +167,10 @@ div.section {
     margin-right: auto;
 }
 
-#javaScript{ padding: 0px; margin: 0px; }
+#javascript{ 
+    padding: 0px; 
+    margin: 0px;
+}
 /* -------------------------------- End Language Page --------------------------- */
 /* ------------------------------------------------------------------------------ */
 /* --------------------------------    Rresume Page   --------------------------- */
@@ -709,6 +720,21 @@ footer {
     height: 200px;
 }
 /* --------------------------------   Aboutme End Page   --------------------------- */
+/* -------------------------------- Language Page Styles --------------------------- */
+#andriodStudio { padding: 0px; margin: 0px; }
+
+#banner { background-size: cover; }
+
+div.section {
+    width: 90vw;
+    display: inline-flex;
+    position: relative;
+}
+
+.section {flex-direction: column;}
+
+.sphoto { align-self: center;}
+/* -------------------------------- End Language Page --------------------------- */
 /* --------------------------------    Rresume Page   --------------------------- */
 #resume_wapper {
     width: 90vw;
