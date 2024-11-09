@@ -59,7 +59,7 @@
     </div>  
   </nav>
   <div id="main">
-
+<!--
   <div id="mobileHide" style="display: hidden;">
   <section class="introContent">
     
@@ -84,7 +84,7 @@
       </div>
     </section>
     </div>
-
+    -->
     <div id="banner">
 
     </div>
@@ -345,19 +345,43 @@
     
           <div class="mobileApps">
     
+            <!-- iframe - code injetion that runs the file in src-->
+             <div id="0001" style="display: flex; flex-direction: row;">
               <div class="section arrayForm">
-                <iframe src="js/array_manipulation_widget.html" style="width: 100%; height: 520px; color: #ffffd8;" 
+                <iframe src="js/array_manipulation_widget.html" style="width: 100%; height: 100%; color: #ffffd8;" 
                   title="Iframe Array"></iframe>
               </div>
-    
-              <div class="section">
-                <div class="sphoto">
-                  
-                </div>
-                <div class="sdisc">
-                  
+              
+              <!-- 
+              - Custome display Code using <pre> and <code>
+              - style class with CSS
+                -->
+              <div class="section" style="width: 50%; white-space: wrap;">
+                <div id="0002" style="display: flex; flex-direction: column; margin-left: 20px; margin-right: 25%;">
+                <h3>Array minipulation</h3>
+                <p> After entering a word and selecting an operation, the Submit button preforms the 
+                   <code class="tag">onclick()</code> attribute. This calls the <code class="tag">execute()</code> 
+                   function, which process the users input into the variable 
+                   <code class="tag">wordList</code> as an array element(object in a list).
+                  </p>
+<pre class="code-block">
+    <code class="orng01">function</code><code class="tan001"> printArray </code><code class="outY01">(</code>array<code class="tan001">,</code>tagID<code class="tan001">,</code>heading</code><code class="outY01">){</code>
+      <code class="orng01">var</code> arrayItem <code class="tan001">=</code> " "<code class="tan001">;</code>
+      <code class="insP01">for(</code><code class="orng01">var</code> cntr<code class="tan001">=</code><code class="gren01">0</code><code class="tan001">;</code> cntr <code class="tan001">&lt;</code> array<code class="tan001">.</code>length<code class="tan001">;</code>cntr<code class="tan001">++</code><code class="insP01">)
+        {</code>
+          arrayItem <code class="tan001">=</code> arrayItem <code class="tan001">+</code> array[cntr] <code class="tan001">+</code> <code class="gren01">"&lt;br&gt;"</code><code class="tan001">;</code>
+        <code class="insP01">}</code>
+    <code class="outY01">}</code>
+</pre>
+                  <p> 
+                    View the code behind each of the functions on my github by clicking the button below.
+                    The file is saved as an HTML <code class="tag">div</code> element for easy implementation
+                    using the <code class="tag">iframe</code> HTML tag.
+                  </p>
+                  <a href="https://github.com/Chris-WebTech/chris-webtech.github.io/blob/main/js/array_manipulation_widget.html" target="_blank"><button style="margin-left: 45%;">GitHub</button></a>
                 </div>
               </div>
+            </div><!-- End of #0001 Row -->
     
               <div class="section">
                 <div class="sphoto">
@@ -605,4 +629,3 @@
 
   </body>
   </html>
-

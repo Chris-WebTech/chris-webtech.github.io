@@ -14,12 +14,49 @@
     background: #e40000bc; /* color of the scroll thumb on hover */
 }
 
+/* Code injection Styles - display code on HTML */
+pre { color: #47908b; }
+
+.code-block { 
+    background-color: #121212; 
+    border: 1px solid #feffef; 
+    padding: 10px; 
+    font-family: monospace; 
+    white-space: pre-wrap; 
+}
+
+code.tag {
+    padding: 1px;
+    border-radius: 3px;
+    color: #121200;
+    background-color: #dfc9ad;
+}
+
+code.gren01 { color: #90ed8d;}
+code.insP01 { color: #ff4ade;}
+code.outY01 { color: #f9ff59;}
+code.orng01 { color: #7d3200;}
+code.tan001 { color: #dfc9ad; }
+
 body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
     background-image: linear-gradient(80deg, #370000, #121212);
     color: rgb(251, 246, 239);
     overflow-x: hidden;
+}
+
+a button:hover {
+    color: #ebdecd;
+    background-color: #121212;
+}
+a button {
+    color: #dfc9ad;
+    font-size: 20px;
+    background-color: #060600;
+    border-radius: 9px;
+    padding: 5px;
+    width: 120px;
 }
 
 .largeNav a {
@@ -137,6 +174,7 @@ section {
 }
 .scrollable {
     overflow-y: hidden;
+    overflow-x: scroll;
     height: 700px;
 }
 .mobileApps {
@@ -145,14 +183,13 @@ section {
 }
 
 div.section {
-    width: 90vw;
+    width: 80vw;
     display: inline-flex;
     position: relative;
 }
 
 .section .sphoto {
     justify-content: center;
-    position: left;
 }
 
 .sphoto img {
@@ -163,6 +200,12 @@ div.section {
 .section .sdisc {
     white-space: wrap;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sdisc2{
+    white-space: wrap;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
