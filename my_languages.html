@@ -121,7 +121,7 @@
       </div>
 <section id="andriodStudio">
 
-  <div class="quote">
+  <div style="align-self: flex-start; margin-left: 9%;">
     <h2>My Applications</h2>
   </div>
       
@@ -274,15 +274,15 @@
 
     <section id="javascript">
 
-      <div class="quote">
+      <div style="align-self: flex-start; margin-left: 9%;">
         <h2>PHP Projects</h2>
       </div>
     
-        <section class="scrollable">
+    <!-- <section class="scrollable"> -->
     
           <div class="mobileApps">
             <div class="secetion">
-             <div class="0001" style="display: flex; flex-direction: row; white-space: wrap;">
+             <div class="0001" style="display: flex; flex-direction: row; justify-content: space-evenly; white-space: wrap;">
                 <div class="lbphoto">
                   <pre class="code-block" style="width: 100%;">
   &lt;?php
@@ -315,7 +315,7 @@
   ?> 
                   </pre>
                 </div>
-                <div class="0002" style="width: 35%; display: flex; flex-direction: column; margin-left: 20px; margin-right: 25%;">
+                <div class="0002" style="width: 35%; display: flex; flex-direction: column; margin-left: 20px; margin-right: 5%;">
                   <h3>PHP Session Variables</h3>
                   <p>
                     This PHP project showcases transferable variables 
@@ -340,7 +340,7 @@
                 </div>
               </div>
             </div><!-- End of .0001 Row -->
-
+<!--
               <div class="section">
                 <div class="lbphoto">
                   
@@ -377,9 +377,10 @@
                 </div>
               </div>
     
-          </div>   
-    
-        </section>
+  
+    -->
+  </div> 
+        <!--</section>-->
     </section>
 
 
@@ -414,27 +415,25 @@
 
     <section id="javascript">
 
-      <div class="quote">
+      <div style="align-self: flex-start; margin-left: 9%;">
         <h2>JavaScript Projects</h2>
       </div>
     
-        <section class="scrollable">
+        <!--<section class="scrollable">-->
     
           <div class="mobileApps">
-    
-            <!-- iframe - code injetion that runs the file in src-->
-             <div class="0001" style="display: flex; flex-direction: row;">
-              <div class="section arrayForm">
-                <iframe src="js/array_manipulation_widget.html" style="width: 100%; height: 100%; color: #ffffd8;" 
-                  title="Iframe Array"></iframe>
-              </div>
+            <div class="secetion">
+              <div class="0001" style="display: flex; flex-direction: row; justify-content: space-evenly; white-space: wrap;">  
+                  <div class="section arrayForm">
+                    <iframe src="js/array_manipulation_widget.html" style="width: 100%; height: 100%; color: #ffffd8;" 
+                      title="Iframe Array"></iframe>
+                  </div>
               
               <!-- 
               - Custome display Code using <pre> and <code>
               - style class with CSS
                 -->
-              <div class="section" style="width:50%; white-space: wrap;">
-                <div class="0002" style="display: flex; flex-direction: column; margin-left: 20px; margin-right: 25%;">
+                <div class="0002" style="width: 35%; display: flex; flex-direction: column;">
                 <h3>Array minipulation</h3>
                 <p> After entering a word and selecting an operation, the Submit button preforms the 
                    <code class="tag">onclick()</code> attribute. This calls the <code class="tag">execute()</code> 
@@ -460,7 +459,7 @@
                   <a href="https://github.com/Chris-WebTech/chris-webtech.github.io/blob/main/js/array_manipulation_widget.html" target="_blank"><button style="margin-left: 45%;">GitHub</button></a>
                 </div>
               </div>
-            </div><!-- End of .0001 Row -->
+            </div><!-- End of .0001 Row 
     
               <div class="section">
                 <div class="lbphoto">
@@ -488,10 +487,10 @@
                   
                 </div>
               </div>
-    
+    -->
           </div>   
     
-        </section>
+        <!--</section>-->
     </section>
 
     <!-----------------------          End of JavaScript        ----------------------->
@@ -523,22 +522,74 @@
 
     <section id="javascript">
 
-      <div class="quote">
+      <div style="align-self: flex-start; margin-left: 9%;">
         <h2>Python Projects</h2>
       </div>
     
-        <section class="scrollable">
+        <!--<section class="scrollable">-->
     
           <div class="mobileApps">
-    
-              <div class="section">
+            <div class="secetion">
+              <div class="0001" style="display: flex; flex-direction: row; justify-content: space-evenly; white-space: wrap;">
                 <div class="lbphoto">
-                </div>
-                <div class="sdisc">
 
+<!--Code tag for color -->
+<pre class="code-block">
+  <code class="insP01">import</code> <code class="gren01">requests</code>
+  
+  url <code class="tan001">=</code> <code class="orng01">'https://your/webpage/location.example'</code>
+  response <code class="tan001">=</code> <code class="gren01">requests</code><code class="tan001">.get</code><code class="outY01">(</code>url<code class="outY01">)</code>
+  json_data <code class="tan001">=</code> response<code class="tan001">.json</code><code class="outY01">()</code>
+  
+  def <code class="tan001">brandGP</code><code class="outY01">()</code><code class="tan001">:</code>
+      <code class="insP01">for</code> x <code class="insP01">in</code> json_data<code class="tan001">:</code>
+  
+          items <code class="tan001">=</code> x<code class="outY01">[</code><code class="orng01">'item'</code><code class="outY01">]</code> <code class="tan001">+</code> <code class="orng01">'</code>\n<code class="orng01">'</code> <code class="tan001">+</code> x<code class="outY01">[</code><code class="orng01">'type'</code><code class="outY01">]</code><code class="tan001"> +</code> <code class="orng01">'</code>\n<code class="orng01">'</code> <code class="tan001">+</code> x<code class="outY01">[</code><code class="orng01">'price'</code><code class="orng01">]</code> <code class="tan001">+</code> <code class="orng01"> '</code>\n<code class="orng01">'</code>
+          
+          <code class="insP01">for</code> c <code class="insP01">in</code> x<code class="tan001">:</code>
+  
+              eList <code class="tan001">=</code> <code class="outY01">[]</code>
+              eList <code class="tan001">=</code> x<code class="outY01">[</code><code class="orng01">'id'</code><code class="outY01">]</code>
+  
+              l4 <code class="tan001">=</code> eList<code class="outY01">[</code><code class="gren01">20</code><code class="outY01">]</code> <code class="tan001">+</code> eList<code class="outY01">[</code><code class="gren01">21</code><code class="outY01">]</code> <code class="tan001">+</code> eList<code class="outY01">[</code><code class="gren01">22</code><code class="outY01">]</code> <code class="tan001">+</code> eList<code class="outY01">[</code><code class="gren01">23</code><code class="outY01">]</code>
+              l4 <code class="tan001">=</code> l4.<code class="tan001">zfill</code><code class="outY01">(</code><code class="gren01">4</code><code class="outY01">]</code>
+  
+          <code class="tan001">print</code><code class="outY01">(</code>l4 <code class="tan001">+</code> <code class="orng01">'</code>\n<code class="orng01">'</code> <code class="tan001">+</code> items<code class="outY01">)</code>
+          
+  def <code class="tan001">main</code><code class="outY01">()</code><code class="tan001">:</code>
+      
+      <code class="tan001">brandGP</code><code class="outY01">()</code>
+  
+  <code class="tan001">main</code><code class="outY01">()</code>
+</pre>
+                </div>
+                
+                  <div class="0002" style="width: 35%; display: flex; flex-direction: column; margin-left: 20px; margin-right: 5%;">
+                  <h3>PHP Session Variables</h3>
+                  <p>
+                    This PHP project showcases transferable variables 
+                    accross webpages using a HTML form and the <code class="tag">session_start()</code> 
+                    function. The full project code can be acessessed by clicking the button below.
+                  </p>
+                  <h4>About The Project</h4>
+                  <p>  
+                    The form utilizes method <code class="tag">POST</code> and stors the user inputs 
+                    in appropreate session variable using 
+                    <code class="tag">$_SESSION</code>; the data is 
+                    assigned to the Associative Array <code class="tag">membersArray</code>
+                    which is transferable across webpages, this allows for access and minipulation
+                    on other webpages.
+                  </p>
+                  <p>
+                    The Array Key and Values are coming from the name of the html
+                    field and the user inputs. 
+                  </p>
+
+                  <a href="https://github.com/Chris-WebTech/python" target="_blank"><button style="margin-left: 45%;">GitHub</button></a>
                 </div>
               </div>
-    
+            </div>
+    <!--
               <div class="section">
                 <div class="lbphoto">
                   
@@ -574,10 +625,10 @@
                   
                 </div>
               </div>
-    
+    -->
           </div>   
     
-        </section>
+        <!--</section>-->
     </section>
 
     <!-----------------------             End of Python         ----------------------->
@@ -616,14 +667,16 @@
       <section id="javascript">
   
         <div class="quote">
-          <h2>SQL Projects</h2>
+          <div style="align-self: flex-start; margin-left: 9%;"><h2>SQL Projects</h2></div>
         </div>
       
-          <section class="scrollable">
+          <!--<section class="scrollable">-->
       
             <div class="mobileApps">
       
                 <div class="section">
+                  <div class="0001" style="display: flex; flex-direction: row; justify-content: space-evenly; white-space: wrap;">
+
                   <div class="lbphoto">
                   </div>
                   <div class="sdisc">
@@ -669,7 +722,7 @@
       
             </div>   
       
-          </section>
+          <!--</section>-->
       </section>
     <!-----------------------             End SQL               ----------------------->
     <!--------------------------------------------------------------------------------->
