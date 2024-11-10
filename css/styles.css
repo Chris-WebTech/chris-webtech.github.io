@@ -36,7 +36,7 @@ code.gren01 { color: #90ed8d;}
 code.insP01 { color: #ff4ade;}
 code.outY01 { color: #f9ff59;}
 code.orng01 { color: #7d3200;}
-code.tan001 { color: #dfc9ad; }
+code.tan001 { color: #dfc9ad;}
 
 body {
     margin: 0;
@@ -188,11 +188,11 @@ div.section {
     position: relative;
 }
 
-.section .sphoto {
+.section .lbphoto {
     justify-content: center;
 }
 
-.sphoto img {
+.lbphoto img {
     width: 300px;
     height: 600px;
 }
@@ -458,6 +458,10 @@ Custome SVG generator:
     height: auto;
 }
 
+.column2 {
+    height: 100px;
+    margin: 2.5%;
+}
 .row > .column {
     padding: 0 8px;
   }
@@ -468,7 +472,7 @@ Custome SVG generator:
     clear: both;
   }
   
-  /* Create four equal columns that floats next to eachother */
+  /* Create equal columns that floats next to eachother */
   .column {
     float: left;
     flex-direction: row;
@@ -486,8 +490,7 @@ Custome SVG generator:
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
+    z-index: 4;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -531,6 +534,10 @@ Custome SVG generator:
     display: none;
     width: 100vw;
     height: 60vh;
+  }
+
+  .mySlides img{
+    margin-left: 25%;
   }
 
   /* Next & previous buttons */
@@ -582,7 +589,13 @@ Custome SVG generator:
   
   img.demo {
     opacity: 0.6;
-    width: 300px;
+    width: 120px;
+    height: auto;
+  }
+
+  img.demo {
+    opacity: 0.6;
+    width: 100px;
     height: auto;
   }
   
@@ -600,7 +613,7 @@ Custome SVG generator:
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
+/* End of lightbox */
 /*clear prevouse styles for Language Accordion*/
 section#myLangs {
     display: block;
@@ -776,7 +789,7 @@ div.section {
 
 .section {flex-direction: column;}
 
-.sphoto { align-self: center;}
+.lbphoto { align-self: center;}
 /* -------------------------------- End Language Page --------------------------- */
 /* --------------------------------    Rresume Page   --------------------------- */
 #resume_wapper {

@@ -1,6 +1,10 @@
 // Open the Modal
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  var hidenav = document.getElementById("fixNav");
+  var n = document.getElementById("myModal").style.display = "block";
+  if (n = "block") {
+    hidenav = hidenav.style.display = "hidden";
+  }
 }
 // Close the Modal
 function closeModal() {
@@ -21,7 +25,7 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 1;}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";

@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
-  <script src="js/hambergerNav.js" defer></script>
+  <script src="js/index.js" defer></script>
 
 </head>
 
@@ -122,7 +122,63 @@
 <section id="andriodStudio">
 
   <div class="quote">
-    <h2>About me App</h2>
+    <h2>My Applications</h2>
+  </div>
+      
+  <!-- Lightbox images need to display above scrolable element -->
+   <!-- The Mobile Application Lightbox -->
+   <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="css/image/calc_app/nav.png" onclick="currentSlide(1)" alt="Calculator - navigation">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+       <div class="thumbnailR">
+        <div class="column">
+          <img class="demo" src="css/image/calc_app/nav.png" onclick="currentSlide(1)" alt="Calculator navigation">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="css/image/calc_app/keypad.png" onclick="currentSlide(2)" alt="Calculator - Keypad">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="css/image/calc_app/comp.png" onclick="currentSlide(3)" alt="Calculator - Computations Opperation">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="css/image/calc_app/factorial.png" onclick="currentSlide(4)" alt="Calculator - Factorial Opperation">
+        </div>
+      </div>
+    </div>
   </div>
 
     <section class="scrollable">
@@ -130,86 +186,56 @@
       <div class="mobileApps">
 
           <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/keypad.png" alt="Calculator">
+            <div class="lbphoto">
+            <!-- Images used to open the lightbox  -->
+            <div class="row">
+              <div class="row-column1">
+                <div class="column2">
+                  <img src="css/image/calc_app/nav.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column2">
+                  <img src="css/image/calc_app/keypad.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>     
+              </div>
+      
+              <div class="row-column1">
+                <div class="column2">
+                  <img src="css/image/calc_app/comp.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column2">
+                  <img src="css/image/calc_app/factorial.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="sdisc">
+              <h3>Calculator App </h3>
+              <p>Click on the Images to open the Lightbox. My calculator app Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem aut officia voluptatibus reprehenderit mollitia neque incidunt, fuga quo quam sapiente modi facilis ipsum ipsa eaque animi, dolores labore reiciendis!</p>
+            </div>
+
+          </div>
+
+          <div class="section">
+            <div class="lbphoto">
+              
             </div>
             <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
           </div>
 
           <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/comp.png" alt="Calculator">
+            <div class="lbphoto">
             </div>
             <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
           </div>
 
           <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/perm.png" alt="Calculator">
+            <div class="lbphoto">
             </div>
             <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
           </div>
 
           <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/factorial.png" alt="Calculator">
-            </div>
-            <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
-          </div>
-
-          <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/nav.png" alt="Calculator">
-            </div>
-            <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
-          </div>
-
-      </div>   
-
-    </section>
-</section>
-
-<section id="zero">
-
-  <div class="quote">
-    <h2>My Calculator</h2>
-  </div>
-
-    <section class="scrollable">
-
-      <div class="mobileApps">
-
-          <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/keypad.png" alt="Calculator">
-            </div>
-            <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
-          </div>
-
-          <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/comp.png" alt="Calculator">
-            </div>
-            <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
-          </div>
-
-          <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/perm.png" alt="Calculator">
-            </div>
-            <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
-          </div>
-
-          <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/factorial.png" alt="Calculator">
-            </div>
-            <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
-          </div>
-
-          <div class="section">
-            <div class="sphoto">
-              <img src="css/image/calc_app/nav.png" alt="Calculator">
+            <div class="lbphoto">
             </div>
             <div class="sdisc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius illo qui, odit doloribus sed nobis architecto quia nisi explicabo necessitatibus accusantium totam delectus a quaerat facere dolores, veniam minus!</div>
           </div>
@@ -255,17 +281,68 @@
         <section class="scrollable">
     
           <div class="mobileApps">
-    
-              <div class="section">
-                <div class="sphoto">
-                </div>
-                <div class="sdisc">
+            <div class="secetion">
+             <div class="0001" style="display: flex; flex-direction: row; white-space: wrap;">
+                <div class="lbphoto">
+                  <pre class="code-block" style="width: 100%;">
+  &lt;?php
+  <code class="tan001">session_start();</code>
 
+  $membersArray   <code class="tan001">= array</code><code class="outY01">  (</code><code class="tan001"> array</code><code class="insP01">(</code><code class="orng01">'fn'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'memfn'</code>]<code class="tan001">,</code>
+                                  <code class="orng01">'ln'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'memln'</code>]<code class="tan001">,</code> 
+                                  <code class="orng01">'ad'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'memaddy'</code>]<code class="tan001">,</code> 
+                                  <code class="orng01">'ct'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'memcity'</code>]<code class="tan001">,</code> 
+                                  <code class="orng01">'st'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'memstate'</code>]<code class="tan001">,</code> 
+                                  <code class="orng01">'zp'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'memzip'</code>]<code class="tan001">,</code> 
+                                  <code class="orng01">'tm'</code> <code class="tan001">=></code> $_POST[<code class="orng01">'teamN'</code>]<code class="insP01">)</code>
+                          <code class="outY01">)</code><code class="tan001">;</code>      <code class="gren01">/*end of user inputs*/</code>
+  
+  <code class="insP01">for</code><code class="outY01">(</code>$row <code class="tan001">=</code> 0<code class="tan001">;</code>$row <code class="tan001"><</code> 1<code class="tan001">;</code> $row<code class="tan001">++</code><code class="outY01">)</code>
+  <code class="outY01">{</code>   <code class="gren01">// assign 1 rows each row contains 7 users input</code>
+  <code class="tan001">echo</code><code class="insP01">(</code>   <code class="orng01">"Your First and Last Name:&lt;br&gt;&lt;strong>"</code><code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'fn'</code>]<code class="tan001">.</code>"&nbsp;"<code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'ln'</code>]<code class="tan001">.</code><code class="orng01">"&lt;/strong>&lt;br&gt;&lt;br&gt;"</code><code class="tan001">.</code>
+                  <code class="orng01">"Your Adress Entered:&lt;br&gt;&lt;strong>"</code><code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'ad'</code>]<code class="tan001">.</code><code class="orng01">"&amp;nbsp;&amp;nbsp;"</code><code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'ct'</code>]<code class="tan001">.</code><code class="orng01">",&amp;nbsp;&amp;nbsp;"</code><code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'st'</code>]<code class="tan001">.</code><code class="orng01">".&amp;nbsp;&amp;nbsp;"</code><code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'zp'</code>]<code class="tan001">.</code><code class="orng01">"&lt;/strong>&lt;br&gt;&lt;br&gt;"</code><code class="tan001">.</code>
+              <code class="orng01">"Your Team Picked:&lt;br&gt;&lt;strong>"</code><code class="tan001">.</code>
+                  $membersArray[$row][<code class="orng01">'tm'</code>]<code class="tan001">.</code><code class="orng01">"&lt;/strong>&lt;br&gt;&lt;br&gt;"</code><code class="insP01">)</code><code class="tan001">;</code>
+  <code class="outY01">}</code>
+  
+  $_SESSION<code class="outY01">[</code><code class="orng01">'player'</code><code class="outY01">]</code> <code class="tan001">=</code> $membersArray<code class="tan001">;</code>
+  ?> 
+                  </pre>
+                </div>
+                <div class="0002" style="width: 35%; display: flex; flex-direction: column; margin-left: 20px; margin-right: 25%;">
+                  <h3>PHP Session Variables</h3>
+                  <p>
+                    This PHP project showcases transferable variables 
+                    accross webpages using a HTML form and the <code class="tag">session_start()</code> 
+                    function. The full project code can be acessessed by clicking the button below.
+                  </p>
+                  <h4>About The Project</h4>
+                  <p>  
+                    The form utilizes method <code class="tag">POST</code> and stors the user inputs 
+                    in appropreate session variable using 
+                    <code class="tag">$_SESSION</code>; the data is 
+                    assigned to the Associative Array <code class="tag">membersArray</code>
+                    which is transferable across webpages, this allows for access and minipulation
+                    on other webpages.
+                  </p>
+                  <p>
+                    The Array Key and Values are coming from the name of the html
+                    field and the user inputs. 
+                  </p>
+
+                  <a href="https://github.com/Chris-WebTech/php" target="_blank"><button style="margin-left: 45%;">GitHub</button></a>
                 </div>
               </div>
-    
+            </div><!-- End of .0001 Row -->
+
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -274,7 +351,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -283,7 +360,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -292,7 +369,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -346,7 +423,7 @@
           <div class="mobileApps">
     
             <!-- iframe - code injetion that runs the file in src-->
-             <div id="0001" style="display: flex; flex-direction: row;">
+             <div class="0001" style="display: flex; flex-direction: row;">
               <div class="section arrayForm">
                 <iframe src="js/array_manipulation_widget.html" style="width: 100%; height: 100%; color: #ffffd8;" 
                   title="Iframe Array"></iframe>
@@ -356,15 +433,17 @@
               - Custome display Code using <pre> and <code>
               - style class with CSS
                 -->
-              <div class="section" style="width: 50%; white-space: wrap;">
-                <div id="0002" style="display: flex; flex-direction: column; margin-left: 20px; margin-right: 25%;">
+              <div class="section" style="width:50%; white-space: wrap;">
+                <div class="0002" style="display: flex; flex-direction: column; margin-left: 20px; margin-right: 25%;">
                 <h3>Array minipulation</h3>
                 <p> After entering a word and selecting an operation, the Submit button preforms the 
                    <code class="tag">onclick()</code> attribute. This calls the <code class="tag">execute()</code> 
                    function, which process the users input into the variable 
                    <code class="tag">wordList</code> as an array element(object in a list).
                   </p>
+<!-- <pre> tag snapshopt of code - remove indentattion (best to iframe here instead)-->
 <pre class="code-block">
+    <!--Code tag for color cordination -->
     <code class="orng01">function</code><code class="tan001"> printArray </code><code class="outY01">(</code>array<code class="tan001">,</code>tagID<code class="tan001">,</code>heading</code><code class="outY01">){</code>
       <code class="orng01">var</code> arrayItem <code class="tan001">=</code> " "<code class="tan001">;</code>
       <code class="insP01">for(</code><code class="orng01">var</code> cntr<code class="tan001">=</code><code class="gren01">0</code><code class="tan001">;</code> cntr <code class="tan001">&lt;</code> array<code class="tan001">.</code>length<code class="tan001">;</code>cntr<code class="tan001">++</code><code class="insP01">)
@@ -381,10 +460,10 @@
                   <a href="https://github.com/Chris-WebTech/chris-webtech.github.io/blob/main/js/array_manipulation_widget.html" target="_blank"><button style="margin-left: 45%;">GitHub</button></a>
                 </div>
               </div>
-            </div><!-- End of #0001 Row -->
+            </div><!-- End of .0001 Row -->
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -393,7 +472,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -402,7 +481,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -453,7 +532,7 @@
           <div class="mobileApps">
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                 </div>
                 <div class="sdisc">
 
@@ -461,7 +540,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -470,7 +549,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -479,7 +558,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -488,7 +567,7 @@
               </div>
     
               <div class="section">
-                <div class="sphoto">
+                <div class="lbphoto">
                   
                 </div>
                 <div class="sdisc">
@@ -545,7 +624,7 @@
             <div class="mobileApps">
       
                 <div class="section">
-                  <div class="sphoto">
+                  <div class="lbphoto">
                   </div>
                   <div class="sdisc">
   
@@ -553,7 +632,7 @@
                 </div>
       
                 <div class="section">
-                  <div class="sphoto">
+                  <div class="lbphoto">
                     
                   </div>
                   <div class="sdisc">
@@ -562,7 +641,7 @@
                 </div>
       
                 <div class="section">
-                  <div class="sphoto">
+                  <div class="lbphoto">
                     
                   </div>
                   <div class="sdisc">
@@ -571,7 +650,7 @@
                 </div>
       
                 <div class="section">
-                  <div class="sphoto">
+                  <div class="lbphoto">
                     
                   </div>
                   <div class="sdisc">
@@ -580,7 +659,7 @@
                 </div>
       
                 <div class="section">
-                  <div class="sphoto">
+                  <div class="lbphoto">
                     
                   </div>
                   <div class="sdisc">
