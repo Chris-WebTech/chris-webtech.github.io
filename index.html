@@ -15,7 +15,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
-  <script src="js/index.js" defer></script>
+  <script src="js/farm_modal.js" defer></script>
+  <script src="js/shelter_modal.js" defer></script>
+  <script src="js/roof_modal.js" defer></script>
+  <script src="js/logo_modal.js" defer></script>
+
+
 
   <!--
   link to instal the animation library Kute.js
@@ -167,46 +172,180 @@
       <div class="row">
         <div class="row-column1">
           <div class="column">
-            <img src="css/image/shelter.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img src="css/image/shelter.png" onclick="openShelterModal(); shelter_currentSlide(1)" class="hover-shadow">
           </div>
           <div class="column">
-            <img src="css/image/farm.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img src="css/image/farm.png" onclick="openFarmModal();farm_currentSlide(1)" class="hover-shadow">
           </div>     
         </div>
 
         <div class="row-column1">
           <div class="column">
-            <img src="css/image/roofing.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            <img src="css/image/roofing.png" onclick="openRoofModal();roof_currentSlide(1)" class="hover-shadow">
           </div>
           <div class="column">
-            <img src="css/image/logo.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            <img src="css/image/logo.png" onclick="openLogoModal();logo_currentSlide(1)" class="hover-shadow">
           </div>
         </div>
       </div>
-
-      <!-- The Modal/Lightbox -->
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
+ 
+      <!-- The Shelter Home Page Modal/Lightbox -->
+      <div id="shelterModal" class="modal">
+        <span class="close cursor" onclick="closeShelterModal()">&times;</span>
         <div class="modal-content">
 
-          <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/one.png" alt="homepage shelter website">
+            <div class="numbertext">1 / 7</div>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/two.png" alt="homepage shelter website">
+            <div class="numbertext">2 / 7</div>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/three.png" alt="homepage shelter website">
+            <div class="numbertext">3 / 7</div>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/four.png" alt="homepage shelter website">
+            <div class="numbertext">4 / 7</div>
+          </div>
 
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/five.png" alt="homepage shelter website">
+            <div class="numbertext">5 / 7</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/six.png" alt="homepage shelter website">
+            <div class="numbertext">6 / 7</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/homepage/seven.png" alt="homepage shelter website">
+            <div class="numbertext">7 / 7</div>
+          </div>
+
+          <!--------------- Adoption Page ------------------------->
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionpage/one.png" alt="Adoption webpage">
+            <div class="numbertext">1 / 6</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionpage/two.png" alt="Adoption webpage">
+            <div class="numbertext">2 / 6</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionpage/three.png" alt="Adoption webpage">
+            <div class="numbertext">3 / 6</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionpage/four.png" alt="Adoption webpage">
+            <div class="numbertext">4 / 6</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionpage/five.png" alt="Adoption webpage">
+            <div class="numbertext">5 / 6</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionpage/six.png" alt="Adoption webpage">
+            <div class="numbertext">6 / 6</div>
+          </div>
+
+          <!--------------- Adoption Form ------------------------->
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionform/one.png" alt="Adoption Form">
+            <div class="numbertext">1 / 3</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionform/two.png" alt="Adoption Form">
+            <div class="numbertext">2 / 2</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/adoptionform/three.png" alt="Adoption Form">
+            <div class="numbertext">3 / 3</div>
+          </div>
+
+          <!--------------- Team Page ------------------------->
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/teampage/one.png" alt="Team Web Page">
+            <div class="numbertext">1 / 3</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/teampage/two.png" alt="Team Web Page">
+            <div class="numbertext">2 / 2</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/teampage/three.png" alt="Team Web Page">
+            <div class="numbertext">3 / 3</div>
+          </div>
+
+
+          <!--------------- Volunteer Form ------------------------->
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/volunteerform/one.png" alt="Form">
+            <div class="numbertext">1 / 2</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/volunteerform/two.png" alt="Form">
+            <div class="numbertext">2 / 2</div>
+          </div>
+
+          <!--------------- Blog Page ------------------------->
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/one.png" alt="Blog Web Page">
+            <div class="numbertext">1 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/two.png" alt="Blog Web Page">
+            <div class="numbertext">2 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/three.png" alt="Blog Web Page">
+            <div class="numbertext">3 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/four.png" alt="Blog Web Page">
+            <div class="numbertext">4 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/five.png" alt="Blog Web Page">
+            <div class="numbertext">5 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/six.png" alt="Blog Web Page">
+            <div class="numbertext">6 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/seven.png" alt="Blog Web Page">
+            <div class="numbertext">7 / 8</div>
+          </div>
+
+          <div class="shelterSlides">
+            <img src="css/image/shelter_carousel_images/ffdesk/blog/eight.png" alt="Blog Web Page">
+            <div class="numbertext">8 / 8</div>
           </div>
 
           <!-- Next/previous controls -->
@@ -215,29 +354,640 @@
 
           <!-- Caption text -->
           <div class="caption-container">
-            <p id="caption"></p>
+            <p id="imgCaption"></p>
           </div>
 
+
+          <div class="scrollableSection" >
+            <h6>Home Page</h6>
           <!-- Thumbnail image controls -->
            <div class="thumbnailR">
             <div class="column">
-              <img class="demo" src="css/image/shelter.png" onclick="currentSlide(1)" alt="Animal Shelter Website">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/one.png" onclick="shelter_currentSlide(1)" alt="Animal Shelter Website">
             </div>
 
             <div class="column">
-              <img class="demo" src="css/image/farm.png" onclick="currentSlide(2)" alt="Farm Website">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/two.png" onclick="shelter_currentSlide(2)" alt="Shelter Home Page">
             </div>
 
             <div class="column">
-              <img class="demo" src="css/image/roofing.png" onclick="currentSlide(3)" alt="Roofing Website">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/three.png" onclick="shelter_currentSlide(3)" alt="Shelter Home Page">
             </div>
 
             <div class="column">
-              <img class="demo" src="css/image/logo.png" onclick="currentSlide(4)" alt="MyLogo">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/four.png" onclick="shelter_currentSlide(4)" alt="Shelter Home Page">
             </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/five.png" onclick="shelter_currentSlide(5)" alt="Shelter Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/six.png" onclick="shelter_currentSlide(6)" alt="Shelter Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/homepage/seven.png" onclick="shelter_currentSlide(7)" alt="Shelter Home Page">
+            </div>
+          </div>
+
+
+          <!-----------Adoption Page ------------>
+          <h6>Adoption Content</h6>
+          <div class="thumbnailR">
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionpage/one.png" onclick="shelter_currentSlide(8)" alt="Square Space Animal Shelter Website">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionpage/two.png" onclick="shelter_currentSlide(9)" alt="Shelter Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionpage/three.png" onclick="shelter_currentSlide(10)" alt="Shelter Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionpage/four.png" onclick="shelter_currentSlide(11)" alt="Shelter Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionpage/five.png" onclick="shelter_currentSlide(12)" alt="Adoption Form">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionpage/six.png" onclick="shelter_currentSlide(13)" alt="Adoption Form">
+            </div>
+
+          </div>
+
+
+
+          <h6>Adoption Form</h6>
+          <div class="thumbnailR">
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionform/one.png" onclick="shelter_currentSlide(14)" alt="Adoption Form">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionform/two.png" onclick="shelter_currentSlide(15)" alt="Adoption Form">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/adoptionform/three.png" onclick="shelter_currentSlide(16)" alt="Adoption Form">
+            </div>
+          </div>
+
+          <h6>Team Page</h6>
+          <div class="thumbnailR">
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/teampage/one.png" onclick="shelter_currentSlide(17)" alt="Team Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/teampage/two.png" onclick="shelter_currentSlide(18)" alt="Team Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/teampage/three.png" onclick="shelter_currentSlide(19)" alt="Team Page">
+            </div>
+          </div>
+
+          <h6>Volunteer Form</h6>
+          <div class="thumbnailR">
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/volunteerform/one.png" onclick="shelter_currentSlide(20)" alt="Team Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/volunteerform/two.png" onclick="shelter_currentSlide(21)" alt="Team Page">
+            </div>
+          </div>
+
+          <h6>Blog Page</h6>
+          <div class="thumbnailR">
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/one.png" onclick="shelter_currentSlide(22)" alt="Blog Page">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/two.png" onclick="shelter_currentSlide(23)" alt="Blog Page">
+            </div>
+
+          <div class="column">
+            <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/three.png" onclick="shelter_currentSlide(24)" alt="Blog Page">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/four.png" onclick="shelter_currentSlide(25)" alt="Blog Page">
+          </div>
+
+
+          <div class="column">
+            <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/five.png" onclick="shelter_currentSlide(26)" alt="Blog Page">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/six.png" onclick="shelter_currentSlide(27)" alt="Blog Page">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/seven.png" onclick="shelter_currentSlide(28)" alt="Blog Page">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="css/image/shelter_carousel_images/ffdesk/blog/eight.png" onclick="shelter_currentSlide(29)" alt="Blog Page">
+          </div>
+        </div>
+
           </div>
         </div>
       </div>
+
+      <!--------------------------------------- The Farm Modal/Lightbox -->
+
+
+      <div id="farmModal" class="modal">
+        
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+
+          <!-------------------------------- Farm home Page Slides -->
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_one.png" alt="Famr Website">
+            <div class="numbertext">1 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_two.png" alt="Home Page">
+            <div class="numbertext">2 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_three.png" alt="Home Page">
+            <div class="numbertext">3 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_four.png" alt="Home Page">
+            <div class="numbertext">4 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_five.png" alt="Home Page">
+            <div class="numbertext">5 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_six.png" alt="Home Page">
+            <div class="numbertext">6 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_seven.png" alt="Home Page">
+            <div class="numbertext">6 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/homepage/slide_eight.png" alt="Home Page">
+            <div class="numbertext">6 / 6</div>
+          </div>
+
+
+          <!-------------------------------- Share Slides -->
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/sharepage/slide_one.png" alt="Share Page">
+            <div class="numbertext">1 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/sharepage/slide_two.png" alt="Share Page">
+            <div class="numbertext">2 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/sharepage/slide_three.png" alt="Share Page">
+            <div class="numbertext">3 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/sharepage/slide_four.png" alt="Share Page">
+            <div class="numbertext">4 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/sharepage/slide_five.png" alt="Share Page">
+            <div class="numbertext">5 / 6</div>
+          </div>
+
+          <div class="farmSlides">
+            <img src="css/image/farm_carousel_images/scfdesk/sharepage/slide_six.png" alt="Share Page">
+            <div class="numbertext">6 / 6</div>
+          </div>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusFarmSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusFarmSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="farmImgCaption"></p>
+          </div>
+          <div class="scrollableSection" >
+          <!-- Thumbnail image controls -->
+          <h6>Home Page</h6>
+            <div class="thumbnailR">
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_one.png" onclick="farm_currentSlide(1)" alt="WordPress Farm Website">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_two.png" onclick="farm_currentSlide(2)" alt="Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_three.png" onclick="farm_currentSlide(3)" alt="Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_four.png" onclick="farm_currentSlide(4)" alt="Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_five.png" onclick="farm_currentSlide(5)" alt="Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_six.png" onclick="farm_currentSlide(6)" alt="Home Page">
+            </div>
+            
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_seven.png" onclick="farm_currentSlide(7)" alt="Home Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/homepage/slide_eight.png" onclick="farm_currentSlide(8)" alt="Home Page">
+            </div>
+
+          </div>
+
+          <!-- Thumbnail image controls -->
+
+          <h6>Share Page</h6>
+          <div class="thumbnailR">
+            
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/sharepage/slide_one.png" onclick="farm_currentSlide(9)" alt="Share Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/sharepage/slide_two.png" onclick="farm_currentSlide(10)" alt="Share Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/sharepage/slide_three.png" onclick="farm_currentSlid9(11)" alt="Share Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/sharepage/slide_four.png" onclick="farm_currentSlide(12)" alt="Share Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/sharepage/slide_five.png" onclick="farm_currentSlide(13)" alt="Share Page">
+            </div>
+
+            <div class="column">
+              <img class="demo farm" src="css/image/farm_carousel_images/scfdesk/sharepage/slide_six.png" onclick="farm_currentSlide(14)" alt="Share Page">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <!------------------------------------- Bauman Roofing Website-->
+
+    <div id="roofingModal" class="modal">
+        
+      <span class="close cursor" onclick="closeRoofModal()">&times;</span>
+      <div class="modal-content">
+
+        <!-------------------------------- Home Page Slides -->
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/homepage/one.png" alt="WordPress Roofing Website">
+          <div class="numbertext">1 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/homepage/two.png" alt="Home Page">
+          <div class="numbertext">2 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/homepage/three.png" alt="Home Page">
+          <div class="numbertext">3 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/homepage/four.png" alt="Home Page">
+          <div class="numbertext">4 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/homepage/six.png" alt="Home Page">
+          <div class="numbertext">6 / 6</div>
+        </div>
+        <!-------------------------------- About Page Slides -->
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/aboutpage/one.png" alt="WordPress Roofing Website">
+          <div class="numbertext">1 / 5</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/aboutpage/two.png" alt="Home Page">
+          <div class="numbertext">2 / 5</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/aboutpage/four.png" alt="Home Page">
+          <div class="numbertext">4 / 5</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/aboutpage/five.png" alt="Home Page">
+          <div class="numbertext">5 / 5</div>
+        </div>
+
+        <!-------------------------------- Service Slides -->
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/servicepage/one.png" alt="Home Page">
+          <div class="numbertext">1 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/servicepage/two.png" alt="Home Page">
+          <div class="numbertext">2 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/servicepage/three.png" alt="Home Page">
+          <div class="numbertext">3 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/servicepage/five.png" alt="Home Page">
+          <div class="numbertext">4 / 6</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/servicepage/seven.png" alt="Home Page">
+          <div class="numbertext">5 / 6</div>
+        </div>
+
+        <!-------------------------------- Contact Slides -->
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/contactpage/one.png" alt="Home Page">
+          <div class="numbertext">1 / 3</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/contactpage/two.png" alt="Home Page">
+          <div class="numbertext">2 / 3</div>
+        </div>
+
+        <div class="roofSlides">
+          <img src="css/image/brllc_carousel_images/contactpage/three.png" alt="Home Page">
+          <div class="numbertext">3 / 3</div>
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusRoofSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusRoofSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="roofImgCaption"></p>
+        </div>
+        <div class="scrollableSection" >
+        <!-- Thumbnail image controls -->
+        <h6>Home Page</h6>
+          <div class="thumbnailR">
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/homepage/one.png" onclick="roof_currentSlide(1)" alt="WordPress Farm Website">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/homepage/two.png" onclick="roof_currentSlide(2)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/homepage/three.png" onclick="roof_currentSlide(3)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/homepage/four.png" onclick="roof_currentSlide(4)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/homepage/four.png" onclick="roof_currentSlide(5)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/homepage/six.png" onclick="roof_currentSlide(6)" alt="Home Page">
+          </div>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <h6>Home Page</h6>
+          <div class="thumbnailR">
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/aboutpage/one.png" onclick="roof_currentSlide(1)" alt="WordPress Farm Website">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/aboutpage/two.png" onclick="roof_currentSlide(2)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/aboutpage/four.png" onclick="roof_currentSlide(3)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/aboutpage/four.png" onclick="roof_currentSlide(4)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/five.png" onclick="roof_currentSlide(5)" alt="Home Page">
+          </div>
+        </div>
+
+        <!-- Thumbnail image controls -->
+
+        <h6>Service Page</h6>
+        <div class="thumbnailR">
+          
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/one.png" onclick="roof_currentSlide(6)" alt="Service Page">
+          </div>
+          
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/two.png" onclick="roof_currentSlide(7)" alt="Service Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/three.png" onclick="roof_currentSlide(8)" alt="Service Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/three.png" onclick="roof_currentSlide(9)" alt="Service Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/five.png" onclick="roof_currentSlide(10)" alt="Service Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/servicepage/seven.png" onclick="roof_currentSlide(11)" alt="Service Page">
+          </div>
+
+        </div>
+          <!-- Thumbnail image controls -->
+
+        <h6>Contact Page</h6>
+        <div class="thumbnailR">
+          
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/contactpage/one.png" onclick="roof_currentSlide(12)" alt="Contact Page">
+          </div>
+          
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/contactpage/two.png" onclick="roof_currentSlide(13)" alt="Contact Page">
+          </div>
+
+          <div class="column">
+            <img class="demo roof" src="css/image/brllc_carousel_images/contactpage/three.png" onclick="roof_currentSlide(14)" alt="Contact Page">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!---------------------------------------------------- logos -->
+    <div id="logoModal" class="modal">
+        
+      <span class="close cursor" onclick="closeLogoModal()">&times;</span>
+      <div class="modal-content">
+
+
+        <!-------------------------------- Logo Slides -->
+
+        <div class="logoSlides">
+          <img src="css/image/logo.png" alt="PhotoShop">
+          <div class="numbertext">1 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/pyLogo.png" alt="Home Page">
+          <div class="numbertext">2 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/jsLogo.png" alt="Home Page">
+          <div class="numbertext">3 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/htmlLogo.png" alt="Home Page">
+          <div class="numbertext">4 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/cssLogo.png" alt="Home Page">
+          <div class="numbertext">5 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/phpLogo.png" alt="Home Page">
+          <div class="numbertext">6 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/sqlLogo.png" alt="Home Page">
+          <div class="numbertext">6 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/dartLogo.png" alt="Home Page">
+          <div class="numbertext">6 / 6</div>
+        </div>
+
+        <div class="logoSlides">
+          <img src="css/image/codeLogo/unrealLogo.png" alt="Home Page">
+          <div class="numbertext">6 / 6</div>
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusLogoSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusLogoSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="logoImgCaption"></p>
+        </div>
+        <div class="scrollableSection" >
+
+        <!-- Thumbnail image controls -->
+        <h6>Home Page</h6>
+          <div class="thumbnailR">
+          <div class="column">
+            <img class="demo logo" src="css/image/logo.png" onclick="logo_currentSlide(1)" alt="WordPress Farm Website">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/pyLogo.png" onclick="logo_currentSlide(2)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/jsLogo.png" onclick="logo_currentSlide(3)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/htmlLogo.png" onclick="logo_currentSlide(4)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/cssLogo.png" onclick="logo_currentSlide(5)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/phpLogo.png" onclick="logo_currentSlide(6)" alt="Home Page">
+          </div>
+          
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/sqlLogo.png" onclick="logo_currentSlide(7)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/dartLogo.png" onclick="logo_currentSlide(8)" alt="Home Page">
+          </div>
+
+          <div class="column">
+            <img class="demo logo" src="css/image/codeLogo/unrealLogo.png" onclick="logo_currentSlide(9)" alt="Home Page">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!---------------------------------------------------- End of Calosel -->
     </section>
 
 

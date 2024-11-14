@@ -479,10 +479,23 @@ Custome SVG generator:
   }
   .thumbnailR {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 10%;
+    justify-content: center;
+  }
+
+  .scrollableSection{
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    align-self: center;
+    height: 20vh;
+    scroll-snap-type: y;
+    position: relative; 
+    overflow-y: scroll; 
+    background-color: #232323;
+    margin-left: 4vw;
   }
   
   /* The Modal (background) */
@@ -493,24 +506,26 @@ Custome SVG generator:
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 100%;
     background-color: black;
   }
-  
+
   /* Modal Content */
   .modal-content {
     position: relative;
-    margin: auto;
     padding: 0;
-    width: 90%;
     max-width: 1200px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2%;
   }
   
   /* The Close Button */
   .close {
     color: white;
+    background-color: #12120033;
+    border-radius: 15px;
     position: absolute;
-    top: 100px;
+    top: 50px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
@@ -529,14 +544,26 @@ Custome SVG generator:
     margin-left: 13.5%;
     }
   /* Hide the slides by default */
-  .mySlides {
+  .shelterSlides,
+  .farmSlides, 
+  .roofSlides {
     display: none;
-    width: 100vw;
-    height: 60vh;
+    height: 70vh;
   }
 
-  .mySlides img{
-    margin-left: 25%;
+  .logoSlides img{ padding-top: 26.5vh;}
+  .logoSlides, 
+  .logoSlides img {
+    width: 20vw;
+    margin: auto;
+}
+
+  .shelterSlides img,
+  .farmSlides img, 
+  .roofSlides img{
+    margin-left: -2vw;
+    width: 1288px;
+    height: 500px;
   }
 
   /* Next & previous buttons */
@@ -549,6 +576,7 @@ Custome SVG generator:
     padding: 16px;
     margin-top: -50px;
     color: white;
+    background-color: #12120033;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -586,17 +614,11 @@ Custome SVG generator:
     color: white;
   }
   
-  img.demo {
-    opacity: 0.6;
-    width: 120px;
-    height: auto;
-  }
-
-  img.demo {
+  img.demo, .farmSlides img.demo, .roofSlides img.demo {
     opacity: 0.6;
     width: 100px;
     height: auto;
-  }
+}
   
   .active,
   .demo:hover {
@@ -670,32 +692,32 @@ button.accordion {
 }
 /* Accordion Logos*/
 #pyLogo {
-    background-image: url("image/pyLogo.png");
+    background-image: url("image/codeLogo/pyLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #sqlLogo {
-    background-image: url("image/sglLogo.png");
+    background-image: url("image/codeLogo/sglLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #urLogo {
-    background-image: url("image/unrealLogo.png");
+    background-image: url("image/codeLogo/unrealLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #dartLogo {
-    background-image: url("image/dartLogo.png");
+    background-image: url("image/codeLogo/dartLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #phpLogo {
-    background-image: url("image/phpLogo.png");
+    background-image: url("image/codeLogo/phpLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 #jsLogo {
-    background-image: url("image/jsLogo.png");
+    background-image: url("image/codeLogo/jsLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
