@@ -276,13 +276,12 @@ div.section {
     background-repeat: no-repeat;
     background-size: contain;
     width: 400px;
-    height: auto;
+    height: 250px;
     position: absolute;
     top: 250px;
     left: 15%;
     z-index: 0;
     box-shadow: rgba(255, 0, 0, 0.414) -40px 10px 25px;
-    border: red 1px solid;
 
 }
 #square2 {
