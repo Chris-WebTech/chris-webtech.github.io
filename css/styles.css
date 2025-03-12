@@ -276,6 +276,7 @@ div.section {
     background-repeat: no-repeat;
     background-size: contain;
     width: 400px;
+    height: auto;
     position: absolute;
     top: 250px;
     left: 15%;
