@@ -96,7 +96,7 @@ ul{
 #lnLogo {
     width: 100px;
     height: 100px;
-    background-image: url('image/logo.png');
+    background-image: url('image/logo-new.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -281,8 +281,6 @@ div.section {
     top: 250px;
     left: 15%;
     z-index: 0;
-    box-shadow: rgba(255, 0, 0, 0.414) -40px 10px 25px;
-
 }
 #square2 {
     width: 300px;
